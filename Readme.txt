@@ -11,3 +11,4 @@ StrataScratch Data Project
 
 * Chama - Data Transformation
   - JSON to data frame conversion
+  - Nested JSON extraction
