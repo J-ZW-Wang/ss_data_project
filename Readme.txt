@@ -1,13 +1,12 @@
 StrataScratch Data Project
 
 * State Farm - Agriculatuarl Data Analysis
-  - Data visualization
-    - Histogram
+  - Data visualization - seaborn
+    - Violin plot
     - Scatter Plot
-    - Heatmap
+    - Heatmap on correlation
   - Statistical analysis
     - ANOVA
-    - Regression Model
 
 * Chama - Data Transformation
   - JSON to data frame conversion
