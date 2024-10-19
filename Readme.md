@@ -1,4 +1,4 @@
-StrataScratch Data Project
+# StrataScratch Data Project
 
 * State Farm - Agriculatuarl Data Analysis
   - Data visualization - seaborn
@@ -11,3 +11,10 @@ StrataScratch Data Project
 * Chama - Data Transformation
   - JSON to data frame conversion
   - Nested JSON extraction
+
+* Uber - Partner Business Modeling
+  - Pandas dataframe manipulation
+
+* Lyft - Driver lifttime value
+  - fd
+  
