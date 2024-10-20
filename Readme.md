@@ -16,5 +16,8 @@
   - Pandas dataframe manipulation
 
 * Lyft - Driver lifttime value
-  - fd
+  - Filter timestamp by hour
+  - Seaborn scatter plot
+  - Catboost 
+  - K-means cluster
   
