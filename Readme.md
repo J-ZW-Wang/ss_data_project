@@ -20,4 +20,8 @@
   - Seaborn scatter plot
   - Catboost 
   - K-means cluster
+
+* Uber - Insights from City Supply and Demand Data
+  - Rolling window aggregation
+  - Seaborn Facetgrid
   
