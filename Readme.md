@@ -32,5 +32,5 @@
 * Walmart - Black Friday Purchases
   - check overall missing in a dataframe
   - sklearn GBM Regressor
-  - sklearn logistic regressor
+  - sklearn linear regression
   
