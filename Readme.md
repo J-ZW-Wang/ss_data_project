@@ -31,6 +31,11 @@
 
 * Walmart - Black Friday Purchases
   - check overall missing in a dataframe
+  - plot multiple subplots in a for loop
   - sklearn GBM Regressor
   - sklearn linear regression
+
+* Aerofit - Treadmill buyer profile
+  - plot multiple subplots in a for loop
+  - Stacked histogram
   
