@@ -34,8 +34,12 @@
   - plot multiple subplots in a for loop
   - sklearn GBM Regressor
   - sklearn linear regression
+  - statsmodel linear regression
 
 * Aerofit - Treadmill buyer profile
   - plot multiple subplots in a for loop
   - Stacked histogram
   
+* Freedom Debt Relief - Marketing Campaign Results
+  - Seaborn pointplots
+  - statsmodel linear regression
