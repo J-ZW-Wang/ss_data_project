@@ -43,3 +43,7 @@
 * Freedom Debt Relief - Marketing Campaign Results
   - Seaborn pointplots
   - statsmodel linear regression
+
+* Meta - Rotten Tomatoes Movies Rating Prediction
+  - Multiple label prediction
+  - 
