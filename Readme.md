@@ -18,8 +18,8 @@
 * Lyft - Driver lifttime value
   - Filter timestamp by hour
   - Seaborn scatter plot
-  - Catboost 
-  - K-means cluster
+  - Catboost regressor
+  - K-means cluster with KElbowVisualizer 
 
 * Uber - Insights from City Supply and Demand Data
   - Rolling window aggregation
@@ -45,5 +45,5 @@
   - statsmodel linear regression
 
 * Meta - Rotten Tomatoes Movies Rating Prediction
-  - Multiple label prediction
-  - 
+  - Catboost - Multiple label prediction
+  - Catboost - feature importance / PDP / SHAP
