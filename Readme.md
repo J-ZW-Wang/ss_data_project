@@ -47,3 +47,10 @@
 * Meta - Rotten Tomatoes Movies Rating Prediction
   - Catboost - Multiple label prediction
   - Catboost - feature importance / PDP / SHAP
+
+* Gett - Insights from failed orders
+  - Seaborn histogram
+  - plotly scatter map
+
+* NoBroker - Property Click Prediction
+  - JSON reformating and normalization
