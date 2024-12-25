@@ -45,8 +45,9 @@
   - statsmodel linear regression
 
 * Meta - Rotten Tomatoes Movies Rating Prediction
-  - Catboost - Multiple label prediction
+  - Catboost - Multiclass prediction
   - Catboost - feature importance / PDP / SHAP
+  - Decision tree - Multiclass prediction
 
 * Gett - Insights from failed orders
   - Seaborn histogram
@@ -54,3 +55,6 @@
 
 * NoBroker - Property Click Prediction
   - JSON reformating and normalization
+  - xGBoost regressor
+  - Random Forrest regressor
+  - Plotly visualization
