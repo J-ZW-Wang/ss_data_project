@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="de" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta charset="utf-8">
+<!-- 
+	******************************************************
+	*
+	* TYPO3 by münster-webdesign.net - Agentur für Typo3 und Magento
+	*
+	* Christian Grugel / www.muenster-webdesign.net / mail(at)muenster-webdesign(dot)net / +49-(0)251-1356-402
+	*
+	******************************************************
+
+	This website is powered by TYPO3 - inspiring people to share!
+	TYPO3 is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.
+	TYPO3 is copyright 1998-2016 of Kasper Skaarhoj. Extensions are copyright of their respective owners.
+	Information and contribution at http://typo3.org/
+-->
+
+<base href="https://www.st-vincenz.de/">
+<link rel="shortcut icon" href="/fileadmin/site/favicon.ico" type="image/x-icon; charset=binary">
+<link rel="icon" href="/fileadmin/site/favicon.ico" type="image/x-icon; charset=binary">
+<title>Leistungsspektrum</title>
+<meta name="generator" content="TYPO3 CMS">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="stylesheet" type="text/css" href="typo3conf/ext/imagecycle/res/css/style.1430810622.css" media="all">
+<link rel="stylesheet" type="text/css" href="typo3temp/stylesheet_4883004a8c.1457966058.css" media="all">
+<link rel="stylesheet" type="text/css" href="fileadmin/site/css/jqueryui/jquery-ui-1.10.3.1426082590.css" media="all">
+<link rel="stylesheet" type="text/css" href="fileadmin/site/yaml/static-build/core/base.1409058658.css" media="all">
+<link rel="stylesheet" type="text/css" href="fileadmin/site/yaml/static-build/navigation/hlist.1433743665.css" media="all">
+<link rel="stylesheet" type="text/css" href="fileadmin/site/yaml/static-build/navigation/vlist.1415601916.css" media="all">
+<link rel="stylesheet" type="text/css" href="fileadmin/site/yaml/static-build/forms/gray-theme.1413375649.css" media="all">
+<link rel="stylesheet" type="text/css" href="fileadmin/site/yaml/static-build/screen/typography.1466169858.css" media="all">
+<link rel="stylesheet" type="text/css" href="fileadmin/site/yaml/static-build/screen/screen-PAGE-layout.1436253347.css" media="all">
+<link rel="stylesheet" type="text/css" href="fileadmin/site/yaml/static-build/print/print.1409059037.css" media="all">
+<link rel="stylesheet" type="text/css" href="fileadmin/site/css/jquerytools/scrollable.1429791414.css" media="all">
+<link rel="stylesheet" type="text/css" href="fileadmin/site/js/fancybox/jquery.fancybox-1.3.4.1434002613.css" media="all">
+<link rel="stylesheet" type="text/css" href="fileadmin/site/css/imagecycle_local_mod.1534401709.css" media="all">
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+jQuery.noConflict();
+/*]]>*/
+</script>
+<script src="fileadmin/site/lib/jquery-ui-1.10.4.custom.min.1426082590.js" type="text/javascript"></script>
+
+<script src="typo3conf/ext/imagecycle/res/jquery/js/jquery.cycle.all-3.0.3.min.1430810622.js" type="text/javascript"></script>
+<script src="typo3conf/ext/imagecycle/res/jquery/js/jquery.easing-1.3.1430810622.js" type="text/javascript"></script>
+<script src="fileadmin/site/js/jquerytools.1429791441.js" type="text/javascript"></script>
+<script src="fileadmin/site/js/fancybox/jquery.fancybox-1.3.4.pack.1434002611.js" type="text/javascript"></script>
+<script src="fileadmin/site/js/local.1498772359.js" type="text/javascript"></script>
+<script src="typo3temp/javascript_e343d5ea6c.1414679993.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+/*<![CDATA[*/
+/*12fc18d786c3cf53ee6cf40a52b3e9b9*/
+jQuery(window).load(function() {
+	play_class = 'play';
+	jQuery('#imagecycle_c5302').after('<div class="imagecycle-controller" id="imagecycle_c5302_controller"><ul><li class="first"><a id="imagecycle_c5302_first"></a></li><li class="prev"><a id="imagecycle_c5302_prev"></a></li><li class="pause"><a id="imagecycle_c5302_pause"></a></li><li class="next"><a id="imagecycle_c5302_next"></a></li><li class="last"><a id="imagecycle_c5302_last"></a></li></ul></div>');
+	jQuery('#imagecycle_c5302_pause').click(function() {
+		_parent = jQuery(this).parent();
+		if(_parent.hasClass(play_class)) {
+			_parent.removeClass(play_class);
+			jQuery('#imagecycle_c5302').cycle('resume');
+		} else {
+			_parent.addClass(play_class);
+			jQuery('#imagecycle_c5302').cycle('pause');
+		}
+	});
+	jQuery('#imagecycle_c5302_first').click(function() {
+		jQuery('#imagecycle_c5302').cycle(0);
+	});
+	jQuery('#imagecycle_c5302_last').click(function() {
+		options = jQuery('#imagecycle_c5302').data('cycle.opts');
+		jQuery('#imagecycle_c5302').cycle(options.elements.length - 1);
+	});
+	
+	jQuery('#imagecycle_c5302').show().cycle({
+		fx: 'fade',
+		easing: 'easeInOutBack',
+		timeout: '10000',
+		sync: true,
+		random: true,
+		cleartypeNoBg: false,
+		before: function(a,n,o,f) {jQuery('div', this).css('display', 'none');},
+		after: function(a,n,o,f) {jQuery('div', this).animate({opacity: 'show'},200,'swing');},
+		next: '#imagecycle_c5302_next',
+		prev: '#imagecycle_c5302_prev'
+		
+	});
+	
+	
+	if (jQuery('#imagecycle_c5302').width() > 0) {
+		jQuery('#imagecycle_c5302').parent().css('width', jQuery('#imagecycle_c5302').width());
+	}
+	
+	
+	jQuery('#imagecycle_c5302').parent().hover(function(){
+		jQuery('#imagecycle_c5302_controller').stop(true,true).fadeIn('fast');
+	}, function(){
+		jQuery('#imagecycle_c5302_controller').stop(true,true).fadeOut('fast');
+	});
+	jQuery('div', jQuery('#imagecycle_c5302')).show();
+});
+
+/*]]>*/
+</script>
+
+
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200' rel='stylesheet' type='text/css'><link href='https://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript">
+	/*<![CDATA[*/
+<!--
+function openPic(url, winName, winParams) {	//
+			var theWindow = window.open(url, winName, winParams);
+			if (theWindow)	{theWindow.focus();}
+		}
+
+// -->
+	/*]]>*/
+</script>
+
+<script type="text/javascript">
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+__gaTracker('create', 'UA-85484539-1');
+__gaTracker('set', 'anonymizeIp', true);
+__gaTracker('send', 'pageview');
+</script>
+</head>
+<body>
+
+<ul class="ym-skiplinks">
+    <li><a class="ym-skip" href="medizinische-kompetenzen/praxis-onkologie/leistungsspektrum/#nav">Zur Navigation</a></li>
+    <li><a class="ym-skip" href="medizinische-kompetenzen/praxis-onkologie/leistungsspektrum/#main">Zum Inhalt</a></li>
+</ul>
+
+<div class="ym-wrapper">
+    <div class="ym-wbox">
+        <header>
+            <div class="header-top">
+                <h2 class="ym-hideme">Suche</h2><form action="suche/" method="post" class="ym-searchform" id="indexedsearch"><input class="ym-searchfield" name="tx_indexedsearch[sword]" value="" id="inputText" type="search" placeholder="Suchbegriff eingeben" /><input class="ms-searchbutton" name="search_submit" type="image" alt="Suche starten" src="fileadmin/site/yaml/assets/bt-search.gif" /><input type="hidden" name="tx_indexedsearch_pi2[action]" value="search" /><input type="hidden" name="tx_indexedsearch_pi2[controller]" value="Search" /></form>
+                <div class="box-sociallinks"><a title="Das St. Vincenz Krankenhaus auf Youtube" href="https://www.youtube.com/user/SanktVincenzLimburg" target="_blank"><span class="sociallink-button youtube">Youtube</span></a><a title="Das St. Vincenz Krankenhaus auf Facebook" href="https://de-de.facebook.com/frauenklinik.limburg" target="_blank"><span class="sociallink-button facebook">Facebook</span></a></div>
+                <nav id="nav">
+                    <h2 class="ym-hideme">Hauptnavigation</h2>
+                    <div class="ym-hlist">
+                        <ul><li class="active"><span>Medizinische Kompetenzen</span><div class="submenu-wrapper"><ul><li><a href="medizinische-kompetenzen/allgemein-und-viszeralchirurgie-proktologie/leistungsspektrum/"><span><span class="right-arrow-quot">&raquo; </span> Allgemein- und Viszeralchirurgie, Proktologie </span></a></li><li><a href="medizinische-kompetenzen/kardiologie-pneumologie-und-internistische-intensivmedizin/leistungsspektrum/"><span><span class="right-arrow-quot">&raquo; </span> Kardiologie, Pneumologie und Internistische Intensivmedizin </span></a></li><li><a href="medizinische-kompetenzen/anaesthesie-und-operative-intensivmedizin/leistungsspektrum/"><span><span class="right-arrow-quot">&raquo; </span> Anästhesie und operative Intensivmedizin </span></a></li><li><a href="medizinische-kompetenzen/kinder-und-jugendmedizin/leistungsspektrum/"><span><span class="right-arrow-quot">&raquo; </span> Kinder- und Jugendmedizin </span></a></li><li><a href="medizinische-kompetenzen/diagnostische-und-interventionelle-radiologie/leistungsspektrum/"><span><span class="right-arrow-quot">&raquo; </span> Diagnostische und Interventionelle Radiologie </span></a></li><li><a href="medizinische-kompetenzen/nephrologie-und-hypertensiologie/leistungsspektrum/"><span><span class="right-arrow-quot">&raquo; </span> Nephrologie und Hypertensiologie </span></a></li><li><a href="medizinische-kompetenzen/frauenklinik/leistungsspektrum/"><span><span class="right-arrow-quot">&raquo; </span> Frauenklinik </span></a></li><li><a href="medizinische-kompetenzen/neurologie-stroke-unit/leistungsspektrum/"><span><span class="right-arrow-quot">&raquo; </span> Neurologie / Stroke Unit </span></a></li><li><a href="medizinische-kompetenzen/gastroenterologie-hepatologie-diabetologie-und-notfallmedizin/leistungsspektrum/"><span><span class="right-arrow-quot">&raquo; </span> Gastroenterologie, Hepatologie, Diabetologie und Notfallmedizin </span></a></li><li><a href="medizinische-kompetenzen/strahlentherapie-und-radioonkologie/leistungsspektrum/"><span><span class="right-arrow-quot">&raquo; </span> Strahlentherapie und Radioonkologie </span></a></li><li><a href="medizinische-kompetenzen/gefaess-vasculaere-und-endovasculaere-chirurgie/leistungsspektrum/"><span><span class="right-arrow-quot">&raquo; </span> Gefäß-, vasculäre und endovasculäre Chirurgie </span></a></li><li><a href="medizinische-kompetenzen/unfallchirurgie-und-orthopaedie/leistungsspektrum/"><span><span class="right-arrow-quot">&raquo; </span> Unfallchirurgie und Orthopädie </span></a></li><li><a href="medizinische-kompetenzen/hals-nasen-ohrenheilkunde/leistungsspektrum/"><span><span class="right-arrow-quot">&raquo; </span> Hals-, Nasen-, Ohrenheilkunde </span></a></li><li><a href="medizinische-kompetenzen/urologie-kinderurologie-und-onkologische-urologie/leistungsspektrum/"><span><span class="right-arrow-quot">&raquo; </span> Urologie, Kinderurologie und onkologische Urologie </span></a></li><li><a href="medizinische-kompetenzen/haematologie-internistische-onkologie-und-palliativmedizin/leistungsspektrum/"><span><span class="right-arrow-quot">&raquo; </span> Hämatologie / Internistische Onkologie und Palliativmedizin </span></a></li><li><a href="medizinische-kompetenzen/zentrale-notaufnahme/allgemeine-informationen/"><span><span class="right-arrow-quot">&raquo; </span> Zentrale Notaufnahme </span></a></li><li><a href="medizinische-kompetenzen/mvz-praxiszentren/"><span><span class="right-arrow-quot">&raquo; </span> MVZ-Praxiszentren </span></a></li></ul></div></li><li><span>Ihr Aufenthalt</span><div class="submenu-wrapper"><ul><li><a href="ihr-aufenthalt/pflegen-und-betreuen/pflegedienst/"><span><span class="right-arrow-quot">&raquo; </span> Pflegen und Betreuen </span></a></li><li><a href="ihr-aufenthalt/physiotherapie/"><span><span class="right-arrow-quot">&raquo; </span> Physiotherapie </span></a></li><li><a href="ihr-aufenthalt/seelsorge/"><span><span class="right-arrow-quot">&raquo; </span> Seelsorge </span></a></li><li><a href="ihr-aufenthalt/aufnahme-und-entlassung/"><span><span class="right-arrow-quot">&raquo; </span> Aufnahme und Entlassung </span></a></li><li><a href="ihr-aufenthalt/essen-und-trinken/"><span><span class="right-arrow-quot">&raquo; </span> Essen und Trinken </span></a></li><li><a href="ihr-aufenthalt/ihr-zimmer/"><span><span class="right-arrow-quot">&raquo; </span> Ihr Zimmer </span></a></li></ul></div></li><li><span>St. Vincenz</span><div class="submenu-wrapper"><ul><li><a href="st-vincenz/st-vincenz-krankenhaus-limburg/"><span><span class="right-arrow-quot">&raquo; </span> St. Vincenz-Krankenhaus Limburg </span></a></li><li><a href="st-vincenz/leitbild/"><span><span class="right-arrow-quot">&raquo; </span> Leitbild </span></a></li><li><a href="st-vincenz/st-vincenz-krankenhaus-diez/"><span><span class="right-arrow-quot">&raquo; </span> St. Vincenz-Krankenhaus Diez </span></a></li><li><a href="st-vincenz/kooperationspartner/"><span><span class="right-arrow-quot">&raquo; </span> Kooperationspartner </span></a></li><li><a href="st-vincenz/gesundheitszentrum-st-anna/"><span><span class="right-arrow-quot">&raquo; </span> Gesundheitszentrum St. Anna </span></a></li><li><a href="st-vincenz/qualitaet/qualitaetsmanagement/"><span><span class="right-arrow-quot">&raquo; </span> Qualität </span></a></li><li><a href="st-vincenz/traeger/"><span><span class="right-arrow-quot">&raquo; </span> Träger </span></a></li><li><a href="st-vincenz/presse/"><span><span class="right-arrow-quot">&raquo; </span> Presse </span></a></li><li><a href="st-vincenz/management/"><span><span class="right-arrow-quot">&raquo; </span> Management </span></a></li><li><a href="st-vincenz/neuer-talbau/"><span><span class="right-arrow-quot">&raquo; </span> Neuer Talbau </span></a></li><li><a href="st-vincenz/ethik-komitee/"><span><span class="right-arrow-quot">&raquo; </span> Ethik-Komitee </span></a></li></ul></div></li><li><span>Karriere</span><div class="submenu-wrapper"><ul><li><a href="karriere/stellenangebote/"><span><span class="right-arrow-quot">&raquo; </span> Stellenangebote </span></a></li><li><a href="karriere/ausbildung/"><span><span class="right-arrow-quot">&raquo; </span> Ausbildung </span></a></li><li><a href="karriere/bildungswerkstadt-st-vincenz/"><span><span class="right-arrow-quot">&raquo; </span> BILDUNGSWERKstadt St. Vincenz </span></a></li><li><a href="karriere/innerbetriebliche-fortbildung/"><span><span class="right-arrow-quot">&raquo; </span> Innerbetriebliche Fortbildung </span></a></li><li><a href="karriere/fachweiterbildung/"><span><span class="right-arrow-quot">&raquo; </span> Fachweiterbildung </span></a></li><li><a href="karriere/praktisches-jahr/"><span><span class="right-arrow-quot">&raquo; </span> Praktisches Jahr </span></a></li><li><a href="karriere/bundesfreiwilligendienst/"><span><span class="right-arrow-quot">&raquo; </span> Bundesfreiwilligendienst </span></a></li></ul></div></li><li><span>Kontakt</span><div class="submenu-wrapper"><ul><li><a href="kontakt/kontakt/"><span><span class="right-arrow-quot">&raquo; </span> Kontakt </span></a></li><li><a href="kontakt/anfahrt/"><span><span class="right-arrow-quot">&raquo; </span> Anfahrt </span></a></li><li><a href="kontakt/medizinproduktesicherheit/"><span><span class="right-arrow-quot">&raquo; </span> Medizinproduktesicherheit </span></a></li></ul></div></li></ul>
+                    </div>
+                </nav>
+                <div class="logo-header"><a href="/"><img width="363" height="83" alt="" src="fileadmin/site/yaml/assets/logo-header.gif" /></a></div>
+            </div>
+        </header>
+        <main>
+            <div class="ym-column">
+                <div class="ym-col1">
+                    <h2 class="ym-hideme">Seitliche Unternavigation</h2>
+                        <div class="ym-cbox">
+                            <nav class="ym-vlist">
+                                <ul><li class="first active"><div class="right-arrow-quot">&raquo;</div><a href="medizinische-kompetenzen/praxis-onkologie/leistungsspektrum/">Leistungsspektrum</a></li><li class=""><div class="right-arrow-quot">&raquo;</div><a href="medizinische-kompetenzen/praxis-onkologie/krankheitsbilder-therapien/">Krankheitsbilder &amp; Therapien</a></li><li class=""><div class="right-arrow-quot">&raquo;</div><a href="medizinische-kompetenzen/praxis-onkologie/sprechstunde/">Sprechstunde</a></li><li class="last"><div class="right-arrow-quot">&raquo;</div><a href="medizinische-kompetenzen/haematologie-internistische-onkologie-und-palliativmedizin/leistungsspektrum/">Hämatologie / Internistische Onkologie und Palliativmedizin</a></li></ul>
+                            </nav>
+                        </div>
+                    <h2 class="ym-hideme">Zusatzinformationen im Sidebar</h2>
+                    <div class="ym-cbox"><div id="c5300" class="csc-default ms-box-white-blue-border"><div class="csc-textpic csc-textpic-left csc-textpic-above"><div class="csc-textpic-imagewrap" data-csc-images="1" data-csc-cols="1"><figure class="csc-textpic-image csc-textpic-last"><a href="index.php?eID=tx_cms_showpic&amp;file=267&amp;md5=61e08d756343b7ffdb8e2a316a7daf79592c0717&amp;parameters%5B0%5D=YTo0OntzOjU6IndpZHRoIjtzOjQ6IjEyMDAiO3M6NjoiaGVpZ2h0IjtzOjU6IjEw&amp;parameters%5B1%5D=MDBtIjtzOjc6ImJvZHlUYWciO3M6NDE6Ijxib2R5IHN0eWxlPSJtYXJnaW46MDsg&amp;parameters%5B2%5D=YmFja2dyb3VuZDojZmZmOyI%2BIjtzOjQ6IndyYXAiO3M6Mzc6IjxhIGhyZWY9Imph&amp;parameters%5B3%5D=dmFzY3JpcHQ6Y2xvc2UoKTsiPiB8IDwvYT4iO30%3D" onclick="openPic('https://www.st-vincenz.de/index.php?eID=tx_cms_showpic&amp;file=267&amp;md5=61e08d756343b7ffdb8e2a316a7daf79592c0717&amp;parameters%5B0%5D=YTo0OntzOjU6IndpZHRoIjtzOjQ6IjEyMDAiO3M6NjoiaGVpZ2h0IjtzOjU6IjEw&amp;parameters%5B1%5D=MDBtIjtzOjc6ImJvZHlUYWciO3M6NDE6Ijxib2R5IHN0eWxlPSJtYXJnaW46MDsg&amp;parameters%5B2%5D=YmFja2dyb3VuZDojZmZmOyI%2BIjtzOjQ6IndyYXAiO3M6Mzc6IjxhIGhyZWY9Imph&amp;parameters%5B3%5D=dmFzY3JpcHQ6Y2xvc2UoKTsiPiB8IDwvYT4iO30%3D','d992aad52e1b5e3c1704f39185fe0130','width=260,height=173,status=0,menubar=0'); return false;" target="thePicture"><img src="fileadmin/user_upload/bilder_und_downloads/haematologie/Onkologische_Ambulanz_Oberaerztin_Dr._Nicola_Storch_01.jpg" width="260" height="173" alt=""></a></figure></div><div class="csc-textpic-text"><div><p class="bodytext"><b>Dr. med. Nicola Storch<br /></b>Fachärztin für Innere Medizin<br />Hämatologie und internist. Onkologie<br />Palliativmedizin, Notfallmedizin</p>
+<p class="bodytext">Gesundheitszentrum Schafsberg<br />4. Stock<br />(hinter St. Vincenz-KH)<br />Auf dem Schafsberg<br />65549 Limburg</p>
+<p class="bodytext">Telefon: 0 64 31. 292-4344 <br />Fax:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 64 31. 292-4586<br />Mail: <a href="javascript:linkTo_UnCryptMailto('lzhksn9luy,nmjnknfhdZluy,gzczlzq-cd');" title="Opens window for sending email" class="mail">mvz-onkologie(at)mvz-hadamar(dot)de</a></p></div></div></div></div><div id="c5801" class="csc-default ms-box-white-blue-border"><header class="csc-header csc-header-n2"><h1 class="centered-border-bottom">Service </h1></header><div><h3><span class="blau">Downloads »</span></h3>
+<p class="bodytext"><a href="fileadmin/user_upload/bilder_und_downloads/Praxiszentren/Neuvorstellung_v._HA.pdf" title="Initiates file download" class="download">Patienten-Neuvorstellung</a><br /><a href="fileadmin/user_upload/bilder_und_downloads/haematologie/Chemotherapie.Informationen.pdf" title="Initiates file download" class="download">Informationen zur Chemotherapie</a></p></div></div></div>
+                </div>
+                <div class="ym-col3">
+                    <h2 class="ym-hideme">Hauptinhalt</h2>
+                    <!--TYPO3SEARCH_begin-->
+                    <div class="ym-cbox"><div id="c5302" class="csc-default"><div class="tx-imagecycle-pi1"><ul id="imagecycle_c5302" class="tx-imagecycle-pi1-images"><li><img src="typo3temp/_processed_/csm_Onk_Ambulanz_1_1dbf935d0c.jpg" width="848" height="423"   alt="" ></li><li><img src="typo3temp/_processed_/csm_Onk_Ambulanz_2_6269417c4b.jpg" width="848" height="423"   alt="" ></li><li><img src="typo3temp/_processed_/csm_Onk_Ambulanz_3_8d4233ef81.jpg" width="848" height="423"   alt="" ></li><li><img src="typo3temp/_processed_/csm_Onk_Ambulanz_4_3b5e1aac72.jpg" width="848" height="423"   alt="" ></li></ul></div><noscript><ul class="tx-imagecycle-pi1-images"><li><img src="typo3temp/_processed_/csm_Onk_Ambulanz_1_1dbf935d0c.jpg" width="848" height="423"   alt="" ></li></ul></noscript></div><div id="c5301" class="csc-default ms-box-teaser-main-column"><header class="csc-header csc-header-n2"><h1>Praxis Onkologie</h1></header><div><p style="margin: 0cm 0cm 10pt;" class="bodytext">In der Praxis für Onkologie betreuen wir Patientinnen und Patienten mit bösartigen Tumoren und chronischen Bluterkrankungen. Von dem Verdacht auf eine Krebs- oder Bluterkrankung über die Diagnostik, die entsprechende individuelle Therapie und die weiteren Verlaufskontrollen bis hin zu den Nachsorgeuntersuchungen sind wir für Sie da. Wir arbeiten in sehr enger Kooperation mit der Abteilung für Hämatologie, Onkologie und Palliativmedizin des St. Vincenz-Krankenhauses Limburg und den anderen Abteilungen des Hauses.</p></div></div><div id="c5299" class="csc-default"><header class="csc-header csc-header-n3"><h1>Leistungsspektrum</h1></header><div><ul><li>Abklärung bei Verdacht auf eine bösartige Erkrankung</li><li>Abklärung von Blutbildstörungen</li><li>Chemo- und Antikörper-Therapien, diese werden zum Teil in enger Kooperation mit dem St. Vincenz-Krankenhaus durchgeführt</li><li>Kontrollen des Therapieansprechens</li><li>Therapie von erkrankungs- oder therapieassoziierten Komplikationen</li><li>Begleitung und Verlaufsbeobachtungen bei Erkrankungen, die aktuell nicht therapiepflichtig, aber kontrollbedürftig sind</li><li>Nachsorgeuntersuchungen</li><li>Regelmäßige Teilnahme an der interdisziplinären Tumorkonferenz des St. Vincenz-Krankenhauses</li></ul></div></div></div>
+                    <!--TYPO3SEARCH_end-->
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="ym-grid">
+                <div class="ym-g25 ym-gl">
+                    <div class="ym-gbox">
+                        <div class="footer-info-block">Lebensrettung, glückliche Geburt und kompetente Behandlung: Das St. Vincenz bietet Gesundheitsversorgung auf hohem Niveau. Rund 1.500 Mitarbeiter  kümmern sich um die Patienten - und das nach neusten Standards in Diagnostik, Therapie und Pflege. Das St. Vincenz-Krankenhaus ist Schwerpunktkrankenhaus und Akademisches Lehrkrankenhaus der Justus-Liebig-Universität Gießen. Mit strategischen Partnerschaften und Kooperationen entwickelt sich das Haus ständig weiter und bleibt offen für Visionen und neue Konzepte.<div class="links fulljustify"><a href="agb/">AGB</a>&nbsp;&#124;&nbsp;<a href="impressum/">Impressum</a>&nbsp;&#124;&nbsp;<a href="datenschutz/">Datenschutz</a></div></div>
+                    </div>
+                </div>
+                <div class="ym-g75 ym-gr">
+                    <nav id="nav-footer">
+                        <div><h3>St. Vincenz</h3><a href="st-vincenz/st-vincenz-krankenhaus-limburg/" title="St. Vincenz-Krankenhaus Limburg">St. Vincenz-Krankenhaus Limburg</a><a href="st-vincenz/st-vincenz-krankenhaus-diez/" title="St. Vincenz-Krankenhaus Diez">St. Vincenz-Krankenhaus Diez</a><a href="st-vincenz/gesundheitszentrum-st-anna/" title="Gesundheitszentrum St. Anna">Gesundheitszentrum St. Anna</a><a href="st-vincenz/traeger/" title="Träger">Träger</a><a href="st-vincenz/management/" title="Management">Management</a><a href="st-vincenz/qualitaet/apotheke/" title="Apotheke">Apotheke</a><a href="st-vincenz/presse/" title="Presse">Presse</a><a href="st-vincenz/qualitaet/qualitaetsmanagement/" title="Qualität">Qualität</a><a href="st-vincenz/presse/termine/" title="Termine">Termine</a></div>
+                        <div><h3>Ihr Aufenthalt</h3><a href="ihr-aufenthalt/pflegen-und-betreuen/pflegedienst/" title="Pflegen und Betreuen">Pflegen und Betreuen</a><a href="ihr-aufenthalt/physiotherapie/" title="Physiotherapie">Physiotherapie</a><a href="medizinische-kompetenzen/haematologie-internistische-onkologie-und-palliativmedizin/psychoonkologie/" title="Psychoonkologie">Psychoonkologie</a><a href="ihr-aufenthalt/aufnahme-und-entlassung/" title="Aufnahme und Entlassung">Aufnahme und Entlassung</a><a href="ihr-aufenthalt/essen-und-trinken/" title="Essen und Trinken">Essen und Trinken</a><a href="ihr-aufenthalt/ihr-zimmer/" title="Ihr Zimmer">Ihr Zimmer</a></div>
+                        <div><h3>Medizinische Kompetenzen</h3><a href="medizinische-kompetenzen/allgemein-und-viszeralchirurgie-proktologie/leistungsspektrum/" title="Allgemein- und Viszeralchirurgie, Proktologie">Allgemein- und Viszeralchirurgie, Proktologie</a><a href="medizinische-kompetenzen/anaesthesie-und-operative-intensivmedizin/leistungsspektrum/" title="Anästhesie und operative Intensivmedizin">Anästhesie und operative Intensivmedizin</a><a href="medizinische-kompetenzen/diagnostische-und-interventionelle-radiologie/leistungsspektrum/" title="Diagnostische und Interventionelle Radiologie">Diagnostische und Interventionelle Radiologie</a><a href="medizinische-kompetenzen/frauenklinik/leistungsspektrum/" title="Frauenklinik">Frauenklinik</a><a href="medizinische-kompetenzen/gastroenterologie-hepatologie-diabetologie-und-notfallmedizin/leistungsspektrum/" title="Gastroenterologie, Hepatologie, Diabetologie und Notfallmedizin">Gastroenterologie, Hepatologie, Diabetologie und Notfallmedizin</a><a href="medizinische-kompetenzen/gefaess-vasculaere-und-endovasculaere-chirurgie/leistungsspektrum/" title="Gefäß-, vasculäre und endovasculäre Chirurgie">Gefäß-, vasculäre und endovasculäre Chirurgie</a><a href="medizinische-kompetenzen/hals-nasen-ohrenheilkunde/leistungsspektrum/" title="Hals-, Nasen-, Ohrenheilkunde">Hals-, Nasen-, Ohrenheilkunde</a><a href="medizinische-kompetenzen/haematologie-internistische-onkologie-und-palliativmedizin/leistungsspektrum/" title="Hämatologie / Internistische Onkologie und Palliativmedizin">Hämatologie / Internistische Onkologie und Palliativmedizin</a><a href="medizinische-kompetenzen/kardiologie-pneumologie-und-internistische-intensivmedizin/leistungsspektrum/" title="Kardiologie, Pneumologie und Internistische Intensivmedizin">Kardiologie, Pneumologie und Internistische Intensivmedizin</a><a href="medizinische-kompetenzen/kinder-und-jugendmedizin/leistungsspektrum/" title="Kinder- und Jugendmedizin">Kinder- und Jugendmedizin</a><a href="medizinische-kompetenzen/nephrologie-und-hypertensiologie/leistungsspektrum/" title="Nephrologie und Hypertensiologie">Nephrologie und Hypertensiologie</a><a href="medizinische-kompetenzen/neurologie-stroke-unit/leistungsspektrum/" title="Neurologie / Stroke Unit">Neurologie / Stroke Unit</a><a href="medizinische-kompetenzen/strahlentherapie-und-radioonkologie/leistungsspektrum/" title="Strahlentherapie und Radioonkologie">Strahlentherapie und Radioonkologie</a><a href="medizinische-kompetenzen/unfallchirurgie-und-orthopaedie/leistungsspektrum/" title="Unfallchirurgie und Orthopädie">Unfallchirurgie und Orthopädie</a><a href="medizinische-kompetenzen/urologie-kinderurologie-und-onkologische-urologie/leistungsspektrum/" title="Urologie, Kinderurologie und onkologische Urologie">Urologie, Kinderurologie und onkologische Urologie</a><a href="medizinische-kompetenzen/zentrale-notaufnahme/allgemeine-informationen/" title="Zentrale Notaufnahme">Zentrale Notaufnahme</a><a href="medizinische-kompetenzen/mvz-praxiszentren/" title="MVZ-Praxiszentren">MVZ-Praxiszentren</a></div>
+                        <div><h3>Karriere</h3><a href="karriere/stellenangebote/" title="Stellenangebote">Stellenangebote</a><a href="karriere/ausbildung/" title="Ausbildung">Ausbildung</a><a href="karriere/bildungswerkstadt-st-vincenz/" title="BILDUNGSWERKstadt St. Vincenz">BILDUNGSWERKstadt St. Vincenz</a><a href="karriere/innerbetriebliche-fortbildung/" title="Innerbetriebliche Fortbildung">Innerbetriebliche Fortbildung</a><a href="karriere/fachweiterbildung/" title="Fachweiterbildung">Fachweiterbildung</a><a href="karriere/praktisches-jahr/" title="Praktisches Jahr">Praktisches Jahr</a><a href="karriere/bundesfreiwilligendienst/" title="Bundesfreiwilligendienst">Bundesfreiwilligendienst</a></div>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>

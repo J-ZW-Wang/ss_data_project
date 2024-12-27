@@ -1,0 +1,127 @@
+keyword,tumor_type
+senologische,Brust
+brustzentrum,Brust
+breast,Brust
+thorax,Brust
+thorakale,Brust
+brustkonferenz,Brust
+rektum,Darm
+colorec,Darm
+viszeralchirurgie,Darm
+visceralonkologischem,Darm
+colon,Darm
+viszeralchirurgische,Darm
+darmkrebszentrum,Darm
+kolorektale,Darm
+dünndarm,Darm
+darmkrebs,Darm
+endomet,Endokrine malignome
+endokrine,Endokrine malignome
+endometria,Endokrine malignome
+malignome,Endokrine malignome
+neuroendokrine,Endokrine malignome
+galle,Gallenblasen/gallengangkrebs
+blasentumoren,Gallenblasen/gallengangkrebs
+viszeralmedizinisches,Gallenblasen/gallengangkrebs
+gynäkologisch,Gynäkologie
+gynäkoonkologie,Gynäkologie
+cervica,Gynäkologie
+genyco,Gynäkologie
+vagina,Gynäkologie
+uterin,Gynäkologie
+ovarian,Gynäkologie
+gynäkologische,Gynäkologie
+bladder,Harnblase
+dermatologische,Haut
+dermo,Haut
+melanoma,Haut
+haut,Haut
+skin,Haut
+hautkreb,Haut
+hauttumor,Haut
+penile,"Hoden, penis"
+testicula,"Hoden, penis"
+leukämien,Hämatooncology
+myeloid,Hämatooncology
+lympho,Hämatooncology
+leukemia,Hämatooncology
+hodgkin,Hämatooncology
+hämatologische,Hämatooncology
+hämatologie,Hämatooncology
+augen,Kopf-hals
+hno-tumore,Kopf-hals
+kopf-hals,Kopf-hals
+parathyroid,Kopf-hals
+thyroid,Kopf-hals
+mediastinal,Kopf-hals
+leber,Leber
+liver,Leber
+lungenszintigrafie,Lunge
+lungenzirkel,Lunge
+lungentumorkonferenz,Lunge
+lungenkrebs,Lunge
+pneumologisch,Lunge
+lungenkrebszentrum,Lunge
+lungenkarzinom,Lunge
+lungenszintigrafien,Lunge
+lungeninhalations,Lunge
+lungenqualitätszirkel,Lunge
+transit,Lymphom
+gastroenterologie,Magen
+stomach,Magen
+gastric,Magen
+gastroenterologisch,Magen
+gastrointestinale,Magen
+magen,Magen
+gastrointestinaltrakt,Magen
+mammografie,Mamma carcinoma
+mamma,Mamma carcinoma
+mammographie,Mamma carcinoma
+mammatumore,Mamma carcinoma
+systemerkrankungen,Neuroonkologie
+neuroonkologische,Neuroonkologie
+zns,Neuroonkologie
+kidney,Niere
+pancreatic,Pankreas
+pankreas,Pankreas
+bile duct,Pankreas
+prostate,Prostata
+prostatakreb,Prostata
+prostatakarzinom,Prostata
+peritonea,Rare cancer
+sarkome,Sarkome
+weichgewebstumoren,Sarkome
+weichteil,Sarkome
+muskuloskeletales,Sarkome
+bone,Sarkome
+weichgewebs-,Sarkome
+ösophagus,Speiseröhre
+urogenitaltrakt,Urologische
+uro-onkologische,Urologische
+uroonkologischen,Urologische
+urologie,Urologische
+urologische,Urologische
+urogenitale,Urologische
+adenoid,Adenoid
+adrenal,Adrenal
+bauchspeicheldrüsenkrebs,Bauchspeicheldrüsenkrebs
+krebszentrum,Interdisziplinär
+interdiszipliären,Interdisziplinär
+radiologisch,Interdisziplinär
+interdisziplinär,Interdisziplinär
+krebszentrums,Interdisziplinär
+allgemeine,Interdisziplinär
+fachübergreifende,Interdisziplinär
+knochen-,Knochentumoren
+knochentumoren,Knochentumoren
+mikroskopieren,Mikroskopieren
+molekulare,Molekular
+oral,Oral
+prätherapeutische,Prätherapeutische
+tumore im kindesalter,Pädiatrische
+kinderonkologisches,Pädiatrische
+kinderonkologie,Pädiatrische
+pädiatrische,Pädiatrische
+schwerpunkt,Schwerpunkt
+stammzelltransplantation,Stammzelltransplantation
+chirurgisch,Surgical

@@ -58,3 +58,7 @@
   - xGBoost regressor
   - Random Forrest regressor
   - Plotly visualization
+
+* PeakData - Keyword Detection on Websites
+  - HTML read-in and text extraction using beautifusoup
+  - 

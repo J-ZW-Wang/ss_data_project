@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="de" lang="de" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- 
+	This website is powered by TYPO3 - inspiring people to share!
+	TYPO3 is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.
+	TYPO3 is copyright 1998-2014 of Kasper Skaarhoj. Extensions are copyright of their respective owners.
+	Information and contribution at http://typo3.org/
+-->
+
+<base href="https://www.krankenhaus-buchholz.de" />
+<link rel="shortcut icon" href="https://www.krankenhaus-buchholz.de/fileadmin/favicon.ico" type="image/x-icon; charset=binary" />
+<link rel="icon" href="https://www.krankenhaus-buchholz.de/fileadmin/favicon.ico" type="image/x-icon; charset=binary" />
+
+<meta name="generator" content="TYPO3 6.2 CMS" />
+<meta name="keywords" content="Krankenhaus Buchholz" />
+<meta name="description" content="Das Krankenhaus Buchholz liegt landschaftlich reizvoll nahe dem süd-östlichen Stadtrand von Hamburg in der Nordheide. Mit seinen 275 Betten gewährleistet es die medizinische und pflegerische Versorgung in den verschiedenen Fachdisziplinen gemäß unseres Leitbildes." />
+
+
+<link rel="stylesheet" type="text/css" href="typo3temp/stylesheet_983cbe9582.css?1434042607" media="all" />
+<link rel="stylesheet" type="text/css" href="typo3conf/ext/t3colorbox/Resources/Public/Css/1.4.26/example1/colorbox.css?1434039951" media="all" />
+
+
+
+
+
+
+<title>Krankenhaus Buchholz -&nbsp;Weiterbildung</title>  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="language" content="de" /> 
+  <meta name="robots" content="" />
+  <meta name="revisit-after" content="7 days" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <link rel="stylesheet" type="text/css" href="fileadmin/template/css/cookie.min.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="fileadmin/template/css/main.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="fileadmin/template/css/print.css" media="print" />
+  <link rel="stylesheet" type="text/css" href="fileadmin/template/css/mobile.css" />
+  <link rel="stylesheet" type="text/css" href="fileadmin/template/mmenu/css/jquery.mmenu.css" />
+  <link rel="stylesheet" type="text/css" href="fileadmin/template/mmenu/extensions/themes/jquery.mmenu.themes.css" />
+  <script src="fileadmin/template/js/jquery-1.10.1.min.js" type="text/javascript"></script>
+  <script src="fileadmin/template/js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+  <script src="fileadmin/template/mmenu/js/jquery.mmenu.min.js" type="text/javascript"></script>
+  <script src="fileadmin/template/mmenu/addons/fixedelements/jquery.mmenu.fixedelements.min.js" type="text/javascript"></script>
+  <script src="fileadmin/template/js/custom.js" type="text/javascript"></script>
+  <script src="fileadmin/template/js/cookie.js" type="text/javascript"></script>
+  <script type="text/javascript"> 
+  $(document).ready(function() {
+    $("#mobilemenu").mmenu({
+      "navbar": {
+        "title": "Krankenhaus"
+      },
+      "extensions": [
+      "theme-dark"
+      ]
+    }, {
+      // configuration
+      offCanvas: {
+        pageSelector: "#wrapper"
+      },
+      classNames: {
+        selected: "active"
+      }
+    });
+    
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#4a4a4a"
+    },
+    "button": {
+      "background": "#007ac4"
+    }
+
+  }
+  ,
+  "content": {
+      "message": 'Um unsere Webseite f&uuml;r Sie optimal zu gestalten und fortlaufend verbessern zu k&ouml;nnen, verwenden wir Cookies. Durch die weitere Nutzung der Webseite stimmen Sie der Verwendung von Cookies zu.<br/>Weitere Informationen zu Cookies erhalten Sie in unserer ',
+      "dismiss": 'OK',
+      "allow": '',
+      "deny": '',
+      "link": 'Datenschutzerkl&auml;rung',
+      "href": 'https://www.krankenhaus-buchholz.de/datenschutz/',
+      "close": '&#x274c;',
+    }
+})});
+  });
+  
+  var rightStart = '#page #content_wrapper > .right_start';
+  var isStart = 0;
+  var right = '#page #content_wrapper > .right';
+  var toggler = ".toggle-right";
+  var windowWidth = 0;
+  $(document).ready(function() {
+    isStart = $(rightStart).length;
+    if (isStart) right = rightStart;
+    windowWidth = $(window).width();
+    $(right).css({'max-height' : $(window).height() - 75});
+  });
+
+  function toggleRight() {
+    if ($(toggler).hasClass('active')) {
+      $(toggler).removeClass('active');
+      $(right).animate({width: 0}, 500);
+      $(toggler).animate({right: 0}, 500);
+      $('#overlay').fadeOut(500);
+    } else {
+      var rightWidth = isStart ? 276 : 173;
+      var toggleRight = isStart ? 271 : 168;
+      $(toggler).addClass('active');
+      $('#overlay').fadeIn(500);
+      $(right).animate({width: rightWidth}, 500);
+      $(toggler).animate({right: toggleRight}, 500);
+    }
+  }
+  
+  function removeStyles() {
+    $(toggler).removeAttr('style');
+    $(right).removeAttr('style');
+  }
+  
+  $(document).ready(function() {
+    $(toggler).click(function() {
+      toggleRight();
+    });
+    
+    $("#overlay").click(function() {
+      $(this).fadeOut(500);
+      toggleRight();
+    });
+    
+    if (windowWidth > 600) {
+      removeStyles();
+    }
+  });
+
+  $(window).resize(function() {
+    removeStyles();
+    windowWidth = $(window).width();
+    $(right).css({'max-height' : $(window).height() - 75});
+  });
+  </script><!-- Matomo -->
+<script type="text/javascript">
+	var _paq = window._paq || [];
+	/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+	_paq.push(['trackPageView']);
+	_paq.push(['enableLinkTracking']);
+	(function() { 
+		var u="//analyse.emotivo.de/";
+		_paq.push(['setTrackerUrl', u+'matomo.php']); 
+		_paq.push(['setSiteId', '35']); 
+		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; 
+		g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; 
+		s.parentNode.insertBefore(g,s); 
+	})();
+</script>
+<!-- End Matomo Code -->
+</head>
+<body>
+
+<div id="wrapper">
+    <div id="overlay"></div>
+    <div class="mobile-header fixed"><a href="#mobilemenu" id="togglemmenu"></a> <p>Krankenhaus Buchholz</p></div>
+    <nav id="mobilemenu"><ul><li><a href="/" >Startseite</a></li><li class="active"><a href="medizinisches-angebot/fachabteilungen/" >Medizinisches Angebot</a><ul><li class="active"><a href="medizinisches-angebot/fachabteilungen/" >Fachabteilungen</a><ul><li><a href="medizinisches-angebot/fachabteilungen/allgemein-und-viszeralchirurgie/" >Allgemein- und Viszeralchirurgie</a><ul><li><a href="medizinisches-angebot/fachabteilungen/allgemein-und-viszeralchirurgie/sprechstunden-kontakt/" >Sprechstunden / Kontakt</a></li><li><a href="medizinisches-angebot/fachabteilungen/allgemein-und-viszeralchirurgie/gastroenterologische-chirurgiedarmzentrum/" >Gastroenterologische Chirurgie/Darmzentrum</a></li><li><a href="medizinisches-angebot/fachabteilungen/allgemein-und-viszeralchirurgie/hernienzentrum/" >Hernienzentrum</a></li><li><a href="medizinisches-angebot/fachabteilungen/allgemein-und-viszeralchirurgie/schilddruesenzentrum/" >Schilddrüsenzentrum</a></li><li><a href="medizinisches-angebot/fachabteilungen/allgemein-und-viszeralchirurgie/proktologie/" >Proktologie</a></li><li><a href="medizinisches-angebot/fachabteilungen/allgemein-und-viszeralchirurgie/ambulante-operationen/" >Ambulante Operationen</a></li><li><a href="medizinisches-angebot/fachabteilungen/allgemein-und-viszeralchirurgie/team/" >Team</a></li><li><a href="medizinisches-angebot/fachabteilungen/allgemein-und-viszeralchirurgie/pj-studenten/" >PJ-Studenten</a></li></ul></li><li><a href="medizinisches-angebot/fachabteilungen/anaesthesiologie-und-intensivmedizin/" >Anästhesiologie und Intensivmedizin</a><ul><li><a href="medizinisches-angebot/fachabteilungen/anaesthesiologie-und-intensivmedizin/anaesthesie/" >Anästhesie</a></li><li><a href="medizinisches-angebot/fachabteilungen/anaesthesiologie-und-intensivmedizin/intensivmedizin/" >Intensivmedizin</a></li><li><a href="medizinisches-angebot/fachabteilungen/anaesthesiologie-und-intensivmedizin/notfallmedizin/" >Notfallmedizin</a></li><li><a href="medizinisches-angebot/fachabteilungen/anaesthesiologie-und-intensivmedizin/schmerzmedizin/" >Schmerzmedizin</a></li><li><a href="medizinisches-angebot/fachabteilungen/anaesthesiologie-und-intensivmedizin/aerzteteam/" >Ärzteteam</a></li><li><a href="medizinisches-angebot/fachabteilungen/anaesthesiologie-und-intensivmedizin/aerztliche-weiterbildung/" >Ärztliche Weiterbildung</a></li></ul></li><li class="active"><a href="medizinisches-angebot/fachabteilungen/frauenheilkunde/" >Frauenheilkunde</a><ul><li><a href="medizinisches-angebot/fachabteilungen/frauenheilkunde/sprechstunden-ambulanz/" >Sprechstunden / Ambulanz</a></li><li><a href="medizinisches-angebot/fachabteilungen/frauenheilkunde/aerzteteam/" >Ärzteteam</a></li><li><a href="medizinisches-angebot/fachabteilungen/frauenheilkunde/ambulante-operationen/" >Ambulante Operationen</a></li><li><a href="medizinisches-angebot/fachabteilungen/frauenheilkunde/urogynaekologie/" >Urogynäkologie</a></li><li class="active"><a href="medizinisches-angebot/fachabteilungen/frauenheilkunde/weiterbildung/" >Weiterbildung</a></li></ul></li><li><a href="medizinisches-angebot/fachabteilungen/geburtshilfe/" >Geburtshilfe</a><ul><li><a href="medizinisches-angebot/fachabteilungen/geburtshilfe/sprechstunden-kontakt/" >Sprechstunden / Kontakt</a></li><li><a href="medizinisches-angebot/fachabteilungen/geburtshilfe/babygalerie/" >Babygalerie</a></li><li><a href="medizinisches-angebot/fachabteilungen/geburtshilfe/aerzteteam/" >Ärzteteam</a></li><li><a href="medizinisches-angebot/fachabteilungen/geburtshilfe/kreisssaal/" >Kreißsaal</a></li><li><a href="medizinisches-angebot/fachabteilungen/geburtshilfe/wehengarten/" >Wehengarten</a></li><li><a href="medizinisches-angebot/fachabteilungen/geburtshilfe/auf-der-wochenstation/" >Auf der Wochenstation</a></li><li><a href="medizinisches-angebot/fachabteilungen/geburtshilfe/gut-versorgt-angebotein-der-schwangerschaft/" >Gut versorgt - Angebote<br/>in der Schwangerschaft</a></li><li><a href="medizinisches-angebot/fachabteilungen/geburtshilfe/schnuppern-sie-mal-bei-uns-rein/" >Schnuppern Sie mal bei uns rein</a></li><li><a href="medizinisches-angebot/fachabteilungen/geburtshilfe/weiterbildung/" >Weiterbildung</a></li></ul></li><li><a href="medizinisches-angebot/fachabteilungen/gefaess-und-endovaskularchirurgie/" >Gefäß- und Endovaskularchirurgie</a><ul><li><a href="medizinisches-angebot/fachabteilungen/gefaess-und-endovaskularchirurgie/sprechstunden-kontakt/" >Sprechstunden / Kontakt</a></li><li><a href="medizinisches-angebot/fachabteilungen/gefaess-und-endovaskularchirurgie/leistungsspektrum/" >Leistungsspektrum</a><ul><li><a href="medizinisches-angebot/fachabteilungen/gefaess-und-endovaskularchirurgie/leistungsspektrum/pavk/" >pAVK</a></li><li><a href="medizinisches-angebot/fachabteilungen/gefaess-und-endovaskularchirurgie/leistungsspektrum/carotisstenose/" >Carotisstenose</a></li><li><a href="medizinisches-angebot/fachabteilungen/gefaess-und-endovaskularchirurgie/leistungsspektrum/bauchaortenaneurysma/" >Bauchaortenaneurysma</a></li><li><a href="medizinisches-angebot/fachabteilungen/gefaess-und-endovaskularchirurgie/leistungsspektrum/dialysepflichtige-nierenisuffizienz/" >Dialysepflichtige Nierenisuffizienz</a></li><li><a href="medizinisches-angebot/fachabteilungen/gefaess-und-endovaskularchirurgie/leistungsspektrum/chronische-wunden/" >chronische Wunden</a></li><li><a href="medizinisches-angebot/fachabteilungen/gefaess-und-endovaskularchirurgie/leistungsspektrum/varikose/" >Varikose</a></li></ul></li><li><a href="medizinisches-angebot/fachabteilungen/gefaess-und-endovaskularchirurgie/team/" >Team</a></li><li><a href="medizinisches-angebot/fachabteilungen/gefaess-und-endovaskularchirurgie/weiterbildung/" >Weiterbildung</a></li></ul></li><li><a href="medizinisches-angebot/fachabteilungen/hals-nasen-ohrenheilkunde/" >Hals-, Nasen-, Ohrenheilkunde</a><ul><li><a href="medizinisches-angebot/fachabteilungen/hals-nasen-ohrenheilkunde/ambulanzen-kontakt-sprechstunden/" >Ambulanzen / Kontakt / Sprechstunden</a></li><li><a href="medizinisches-angebot/fachabteilungen/hals-nasen-ohrenheilkunde/leistungsspektrum/" >Leistungsspektrum</a></li><li><a href="medizinisches-angebot/fachabteilungen/hals-nasen-ohrenheilkunde/team/" >Team</a></li></ul></li><li><a href="medizinisches-angebot/fachabteilungen/innere-medizin/" >Innere Medizin</a><ul><li><a href="medizinisches-angebot/fachabteilungen/innere-medizin/kardiologie-und-angiologie/" >Kardiologie und Angiologie</a></li><li><a href="medizinisches-angebot/fachabteilungen/innere-medizin/gastroenterologie/" >Gastroenterologie</a></li><li><a href="medizinisches-angebot/fachabteilungen/innere-medizin/onkologie/" >Onkologie</a></li><li><a href="medizinisches-angebot/fachabteilungen/innere-medizin/geriatrie/" >Geriatrie</a><ul><li><a href="medizinisches-angebot/fachabteilungen/innere-medizin/geriatrie/uebersicht-des-verlaufgeschehens/" >Übersicht des Verlaufgeschehens</a></li></ul></li><li><a href="medizinisches-angebot/fachabteilungen/innere-medizin/rheumatologie/" >Rheumatologie</a></li><li><a href="medizinisches-angebot/fachabteilungen/innere-medizin/internistische-und-neurologische-aufnahmestation-ina/" >Internistische und Neurologische Aufnahmestation INA</a></li><li><a href="medizinisches-angebot/fachabteilungen/innere-medizin/sprechstunden-und-ambulanzen/" >Sprechstunden und Ambulanzen</a></li><li><a href="medizinisches-angebot/fachabteilungen/innere-medizin/aerzteteam/" >Ärzteteam</a></li><li><a href="medizinisches-angebot/fachabteilungen/innere-medizin/aerztliche-weiterbildung/" >Ärztliche Weiterbildung</a></li><li><a href="medizinisches-angebot/fachabteilungen/innere-medizin/studentische-ausbildung/" >Studentische Ausbildung</a></li><li><a href="medizinisches-angebot/fachabteilungen/innere-medizin/studienzentrum-der-abteilung/" >Studienzentrum der Abteilung</a></li></ul></li><li><a href="medizinisches-angebot/fachabteilungen/neurologie/" >Neurologie</a><ul><li><a href="medizinisches-angebot/fachabteilungen/neurologie/sprechstunden-kontakt-und-ambulanzen/" >Sprechstunden, Kontakt und Ambulanzen</a><ul><li><a href="medizinisches-angebot/fachabteilungen/neurologie/sprechstunden-kontakt-und-ambulanzen/ms-spezialambulanz/" >MS-Spezialambulanz</a></li></ul></li><li><a href="medizinisches-angebot/fachabteilungen/neurologie/stationen/" >Stationen</a><ul><li><a href="medizinisches-angebot/fachabteilungen/neurologie/stationen/schlaganfalleinheit-stroke-unit/" >Schlaganfalleinheit / Stroke Unit</a></li></ul></li><li><a href="medizinisches-angebot/fachabteilungen/neurologie/aerzteteam/" >Ärzteteam</a></li><li><a href="medizinisches-angebot/fachabteilungen/neurologie/leistungsspektrum/" >Leistungsspektrum</a></li><li><a href="medizinisches-angebot/fachabteilungen/neurologie/aerztliche-weiterbildung/" >Ärztliche Weiterbildung</a></li><li><a href="medizinisches-angebot/fachabteilungen/neurologie/studentische-ausbildung/" >Studentische Ausbildung</a></li><li><a href="medizinisches-angebot/fachabteilungen/neurologie/klinische-studien/" >Klinische Studien</a></li><li><a href="medizinisches-angebot/fachabteilungen/neurologie/haeufige-krankheitsbilder/" >Häufige Krankheitsbilder</a></li><li><a href="medizinisches-angebot/fachabteilungen/neurologie/vortraege-fuer-patienten-und-interessierte/" >Vorträge für Patienten und Interessierte</a></li><li><a href="medizinisches-angebot/fachabteilungen/neurologie/hilfreiche-kontaktadressen/" >Hilfreiche Kontaktadressen</a></li><li><a href="medizinisches-angebot/fachabteilungen/neurologie/weiterfuehrende-links/" >Weiterführende Links</a></li></ul></li><li><a href="medizinisches-angebot/fachabteilungen/orthopaedie-und-unfallchirurgie/" >Orthopädie und Unfallchirurgie</a><ul><li><a href="medizinisches-angebot/fachabteilungen/orthopaedie-und-unfallchirurgie/kontakt-und-sprechstunden/" >Kontakt und Sprechstunden</a></li><li><a href="medizinisches-angebot/fachabteilungen/orthopaedie-und-unfallchirurgie/aktuelles/" >Aktuelles</a></li><li><a href="medizinisches-angebot/fachabteilungen/orthopaedie-und-unfallchirurgie/leistungsspektrum/" >Leistungsspektrum</a></li><li><a href="medizinisches-angebot/fachabteilungen/orthopaedie-und-unfallchirurgie/huefte/" >Hüfte</a><ul><li><a href="medizinisches-angebot/fachabteilungen/orthopaedie-und-unfallchirurgie/huefte/behandlungsablauf/" >Behandlungsablauf</a></li><li><a href="medizinisches-angebot/fachabteilungen/orthopaedie-und-unfallchirurgie/huefte/zementfreie-huefte/" >Zementfreie Hüfte</a></li><li><a href="medizinisches-angebot/fachabteilungen/orthopaedie-und-unfallchirurgie/huefte/zementierte-huefte/" >Zementierte Hüfte</a></li></ul></li><li><a href="medizinisches-angebot/fachabteilungen/orthopaedie-und-unfallchirurgie/knie/" >Knie</a><ul><li><a href="medizinisches-angebot/fachabteilungen/orthopaedie-und-unfallchirurgie/knie/behandlungsablauf/" >Behandlungsablauf</a></li></ul></li><li><a href="medizinisches-angebot/fachabteilungen/orthopaedie-und-unfallchirurgie/schulter/" >Schulter</a><ul><li><a href="medizinisches-angebot/fachabteilungen/orthopaedie-und-unfallchirurgie/schulter/behandlungsablauf/" >Behandlungsablauf</a></li><li><a href="medizinisches-angebot/fachabteilungen/orthopaedie-und-unfallchirurgie/schulter/engpasssyndrom/" >EngpassSyndrom</a></li><li><a href="medizinisches-angebot/fachabteilungen/orthopaedie-und-unfallchirurgie/schulter/schulterinstabilitaet/" >Schulterinstabilität</a></li><li><a href="medizinisches-angebot/fachabteilungen/orthopaedie-und-unfallchirurgie/schulter/endoprothetik-der-schulter/" >Endoprothetik der Schulter</a></li></ul></li><li><a href="medizinisches-angebot/fachabteilungen/orthopaedie-und-unfallchirurgie/team/" >Team</a></li><li><a href="medizinisches-angebot/fachabteilungen/orthopaedie-und-unfallchirurgie/studierende/" >Studierende</a><ul><li><a href="medizinisches-angebot/fachabteilungen/orthopaedie-und-unfallchirurgie/studierende/anna-christina-bellersen/" >Anna Christina Bellersen</a></li><li><a href="medizinisches-angebot/fachabteilungen/orthopaedie-und-unfallchirurgie/studierende/ayse-acar/" >Ayse Acar</a></li><li><a href="medizinisches-angebot/fachabteilungen/orthopaedie-und-unfallchirurgie/studierende/keijo-schulze/" >Keijo Schulze</a></li></ul></li></ul></li><li><a href="medizinisches-angebot/fachabteilungen/physiotherapie/" >Physiotherapie</a><ul><li><a href="medizinisches-angebot/fachabteilungen/physiotherapie/ambulanzen-kontakt-sprechstunden/" >Ambulanzen / Kontakt / Sprechstunden</a></li><li><a href="medizinisches-angebot/fachabteilungen/physiotherapie/leistungsspektrum/" >Leistungsspektrum</a></li><li><a href="medizinisches-angebot/fachabteilungen/physiotherapie/team/" >Team</a></li><li><a href="medizinisches-angebot/fachabteilungen/physiotherapie/aus-fort-weiterbildung/" >Aus-/Fort-/Weiterbildung</a></li></ul></li><li><a href="medizinisches-angebot/fachabteilungen/strahlentherapie/" >Strahlentherapie</a><ul><li><a href="medizinisches-angebot/fachabteilungen/strahlentherapie/ambulanzen-kontakt-sprechstunden/" >Ambulanzen / Kontakt / Sprechstunden</a></li><li><a href="medizinisches-angebot/fachabteilungen/strahlentherapie/leistungsspektrum/" >Leistungsspektrum</a></li><li><a href="medizinisches-angebot/fachabteilungen/strahlentherapie/team/" >Team</a></li></ul></li><li><a href="medizinisches-angebot/fachabteilungen/urologie/" >Urologie</a><ul><li><a href="medizinisches-angebot/fachabteilungen/urologie/leistungsspektrum/" >Leistungsspektrum</a></li><li><a href="medizinisches-angebot/fachabteilungen/urologie/team/" >Team</a></li></ul></li><li><a href="medizinisches-angebot/fachabteilungen/medizinproduktesicherheit/" >Medizinproduktesicherheit</a></li></ul></li><li><a href="medizinisches-angebot/zentren/" >Kompetenzzentren</a><ul><li><a href="medizinisches-angebot/zentren/brustkrebszentrum/" >Brustkrebszentrum</a><ul><li><a href="medizinisches-angebot/zentren/brustkrebszentrum/philosophie-des-onkologischen-zentrums/" >Philosophie des Onkologischen Zentrums</a></li><li><a href="medizinisches-angebot/zentren/brustkrebszentrum/gynaekologie-und-plastische-chirurgie/" >Gynäkologie und plastische Chirurgie</a></li><li><a href="medizinisches-angebot/zentren/brustkrebszentrum/internistische-onkologie/" >Internistische Onkologie</a></li><li><a href="medizinisches-angebot/zentren/brustkrebszentrum/radiologie-und-nuklearmedizin/" >Radiologie und Nuklearmedizin</a></li><li><a href="medizinisches-angebot/zentren/brustkrebszentrum/strahlentherapie/" >Strahlentherapie</a></li><li><a href="medizinisches-angebot/zentren/brustkrebszentrum/psychoonkologie/" >Psychoonkologie</a></li><li><a href="medizinisches-angebot/zentren/brustkrebszentrum/breast-care-nurse/" >Breast-Care-Nurse</a></li><li><a href="medizinisches-angebot/zentren/brustkrebszentrum/sozialdienst/" >Sozialdienst</a></li><li><a href="medizinisches-angebot/zentren/brustkrebszentrum/seelsorge/" >Seelsorge</a></li><li><a href="medizinisches-angebot/zentren/brustkrebszentrum/selbsthilfegruppen/" >Selbsthilfegruppen</a></li><li><a href="medizinisches-angebot/zentren/brustkrebszentrum/pathologie/" >Pathologie</a></li></ul></li><li><a href="medizinisches-angebot/zentren/darmkrebszentrum/" >Darmkrebszentrum</a><ul><li><a href="medizinisches-angebot/zentren/darmkrebszentrum/philosophie-des-onkologischen-zentrums/" >Philosophie des Onkologischen Zentrums</a></li><li><a href="medizinisches-angebot/zentren/darmkrebszentrum/chirurgie-und-endoskopie/" >Chirurgie und Endoskopie</a></li><li><a href="medizinisches-angebot/zentren/darmkrebszentrum/internistische-onkologie/" >Internistische Onkologie</a></li><li><a href="medizinisches-angebot/zentren/darmkrebszentrum/radiologie-und-nuklearmedizin/" >Radiologie und Nuklearmedizin</a></li><li><a href="medizinisches-angebot/zentren/darmkrebszentrum/strahlentherapie/" >Strahlentherapie</a></li><li><a href="medizinisches-angebot/zentren/darmkrebszentrum/psychoonkologie/" >Psychoonkologie</a></li><li><a href="medizinisches-angebot/zentren/darmkrebszentrum/stoma-therapie/" >Stoma-Therapie</a></li><li><a href="medizinisches-angebot/zentren/darmkrebszentrum/sozialdienst/" >Sozialdienst</a></li><li><a href="medizinisches-angebot/zentren/darmkrebszentrum/seelsorge/" >Seelsorge</a></li><li><a href="medizinisches-angebot/zentren/darmkrebszentrum/pathologie/" >Pathologie</a></li></ul></li><li><a href="medizinisches-angebot/zentren/endoprothetikzentrum/" >Endoprothetikzentrum</a></li><li><a href="medizinisches-angebot/zentren/traumazentrum/" >Traumazentrum</a></li><li><a href="medizinisches-angebot/fachabteilungen/neurologie/stationen/schlaganfalleinheit-stroke-unit/" >Schlaganfalleinheit / Stroke Unit</a></li><li><a href="medizinisches-angebot/fachabteilungen/innere-medizin/kardiologie-und-angiologie/zentrum-fuer-herz-und-gefaessmedizin/" >Zentrum für Herz- und Gefäßmedizin</a></li></ul></li><li><a href="medizinisches-angebot/koerperkompass/" >Körperkompass</a><ul><li><a href="medizinisches-angebot/koerperkompass/frau/" >Frau</a></li><li><a href="medizinisches-angebot/koerperkompass/mann/" >Mann</a></li></ul></li><li><a href="medizinisches-angebot/pflege/" >Pflege</a></li><li><a href="medizinisches-angebot/dem-haus-sind-angeschlossen/" >Dem Haus sind angeschlossen</a><ul><li><a href="medizinisches-angebot/dem-haus-sind-angeschlossen/mvz-chirurgie/" >MVZ Chirurgie</a><ul><li><a href="medizinisches-angebot/dem-haus-sind-angeschlossen/mvz-chirurgie/leistungsspektrum/" >Leistungsspektrum</a></li></ul></li><li><a href="medizinisches-angebot/dem-haus-sind-angeschlossen/mvz-strahlentherapie/" >MVZ Strahlentherapie</a></li></ul></li></ul></li><li><a href="unternehmen/geschaeftsfuehrung/" >Unternehmen</a><ul><li><a href="unternehmen/geschaeftsfuehrung/" >Geschäftsführung</a><ul><li><a href="unternehmen/geschaeftsfuehrung/unser-direktorium/" >Unser Direktorium</a></li></ul></li><li><a href="unternehmen/leitbild/" >Leitbild</a></li><li><a href="unternehmen/qualitaetsmanagement/" >Qualitätsmanagement</a><ul><li><a href="unternehmen/qualitaetsmanagement/zertifikate/" >Zertifikate</a></li></ul></li><li><a href="unternehmen/medizinproduktesicherheit/" >Medizinproduktesicherheit</a></li><li><a href="unternehmen/betriebsrat/" >Betriebsrat</a></li><li><a href="unternehmen/betriebsmedizin/" >Betriebsmedizin</a></li><li><a href="unternehmen/lehre-karriere/stellenangebote/" >Lehre & Karriere</a><ul><li><a href="unternehmen/lehre-karriere/stellenangebote/" >Stellenangebote</a><ul><li><a href="unternehmen/lehre-karriere/stellenangebote/stellenangebote-pflege/" >Stellenangebote Pflege</a></li></ul></li><li><a href="unternehmen/lehre-karriere/pj-studierende/" >PJ-Studierende</a></li><li><a href="unternehmen/lehre-karriere/freiwilliges-soziales-jahr/" >Freiwilliges Soziales Jahr</a></li><li><a href="unternehmen/lehre-karriere/bundesfreiwilligendienst/" >Bundesfreiwilligendienst</a></li><li><a href="unternehmen/lehre-karriere/gesundheitsfachschule-und-bildungszentrum/" >Gesundheitsfachschule und Bildungszentrum</a><ul><li><a href="unternehmen/lehre-karriere/gesundheitsfachschule-und-bildungszentrum/berufsbild/" >Berufsbild</a></li><li><a href="unternehmen/lehre-karriere/gesundheitsfachschule-und-bildungszentrum/ausbildung/" >Ausbildung</a></li><li><a href="unternehmen/lehre-karriere/gesundheitsfachschule-und-bildungszentrum/bewerbung-kontakt/" >Bewerbung / Kontakt</a></li></ul></li></ul></li><li><a href="unternehmen/kooperationspartner/" >Kooperationspartner</a></li><li><a href="unternehmen/foerderverein/" >Förderverein</a></li><li><a href="unternehmen/geschichte/" >Geschichte</a></li><li><a href="unternehmen/allgemeine-geschaeftsbedingungen/" >Allgemeine Geschäftsbedingungen</a></li><li><a href="unternehmen/auftragsvergaben/" >Auftragsvergaben</a></li></ul></li><li><a href="patienten-besucher/patienteninformation/" >Patienten & Besucher</a><ul><li><a href="patienten-besucher/patienteninformation/" >Patienteninformation</a><ul><li><a href="patienten-besucher/patienteninformation/bevor-sie-zu-uns-kommen/" >Bevor Sie zu uns kommen</a></li><li><a href="patienten-besucher/patienteninformation/bei-ihrer-ankunft/" >Bei Ihrer Ankunft</a></li><li><a href="patienten-besucher/patienteninformation/auf-der-station/" >Auf der Station</a></li><li><a href="patienten-besucher/patienteninformation/unsere-aerzte-und-das-pflegeteam-ganz-fuer-sie-da/" >Unsere Ärzte und das Pflegeteam – ganz für Sie da</a></li><li><a href="patienten-besucher/patienteninformation/damit-das-essen-ihnen-schmeckt/" >Damit das Essen Ihnen schmeckt</a></li><li><a href="patienten-besucher/patienteninformation/seelsorge/" >Seelsorge</a></li><li><a href="patienten-besucher/patienteninformation/fuer-ihr-wohlbefinden/" >Für Ihr Wohlbefinden</a></li><li><a href="patienten-besucher/patienteninformation/wenn-sie-gehen/" >Wenn Sie gehen</a></li></ul></li><li><a href="patienten-besucher/einrichtungen/sozialdienst/" >Einrichtungen</a><ul><li><a href="patienten-besucher/einrichtungen/sozialdienst/" >Sozialdienst</a></li><li><a href="patienten-besucher/einrichtungen/klinisches-ethik-komitee/" >Klinisches Ethik Komitee</a><ul><li><a href="patienten-besucher/einrichtungen/klinisches-ethik-komitee/die-patientenverfuegung/" >Die Patientenverfügung</a></li></ul></li><li><a href="patienten-besucher/einrichtungen/gruene-damen-und-herren/" >Grüne Damen und Herren</a></li><li><a href="patienten-besucher/einrichtungen/menue-assistenz/" >Menü-Assistenz</a></li><li><a href="patienten-besucher/einrichtungen/kiosk-cafeteria/" >Kiosk / Cafeteria</a></li><li><a href="patienten-besucher/einrichtungen/patientenbuecherei/" >Patientenbücherei</a></li><li><a href="patienten-besucher/einrichtungen/gaestehaus/" >Gästehaus</a></li><li><a href="patienten-besucher/einrichtungen/raum-der-stille/" >Raum der Stille</a></li></ul></li><li><a href="patienten-besucher/besucherinformation/" >Besucherinformation</a><ul><li><a href="patienten-besucher/besucherinformation/auf-der-station/" >Auf der Station</a></li><li><a href="patienten-besucher/besucherinformation/fuer-ihr-wohlbefinden/" >Für Ihr Wohlbefinden</a></li></ul></li><li><a href="patienten-besucher/anreise-parkmoeglichkeiten/" >Anreise & Parkmöglichkeiten</a></li><li><a href="patienten-besucher/krankenhaus-uebersichtsplan/" >Krankenhaus Übersichtsplan</a></li><li><a href="patienten-besucher/patientenfeedback/" >Patientenfeedback</a></li></ul></li><li><a href="kontakt/" >Kontakt</a></li><li><a href="datenschutz/" >Datenschutz</a></li><li><a href="impressum/" >Impressum</a></li><li><a href="suche/" >Suche</a></li></ul></nav>
+    <div id="top_line"></div>
+    <div id="page">
+        <div id="top">
+            <div id="logo"><a href="./."><img src="fileadmin/template/images/logo.jpg" alt="Logo Krankenhaus Buchholz" /></a></div>
+            <div id="top_menu"><ul><li><a href="impressum/" ><img src="/fileadmin/template/images/icon/impressum_icon.gif" alt="Impressum" />Impressum</a></li><li><a href="datenschutz/" ><img src="/fileadmin/template/images/icon/datenschutz_icon.gif" alt="Datenschutz" />Datenschutz</a></li><li><a href="kontakt/" ><img src="/fileadmin/template/images/icon/kontakt_icon.gif" alt="Kontakt" />Kontakt</a></li></ul></div>
+            <div id="search" class="fixed">
+                <form action="suche/" method="post">
+                    <input name="tx_indexedsearch[sword]" type="text" class="textfield" onblur="this.value=!this.value?'Suchen ...':this.value;" value="Suchen ..." onclick="this.value='';"/>
+                    <input type="image" class="searchsubmit" name="imageField" src="fileadmin/template/images/buttons/submit_search.gif" />
+                    <div class="clear"></div>
+                </form>
+            </div>
+            <div id="mainmenu"><ul><li id="mainmenu_button_unt"><a href="unternehmen/geschaeftsfuehrung/" >Unternehmen</a></li><li id="mainmenu_button_pat"><a href="patienten-besucher/patienteninformation/" >Patienten & Besucher</a></li><li class="active" id="mainmenu_button_med"><a href="medizinisches-angebot/fachabteilungen/" >Medizinisches Angebot</a></li><li><a href="/" >Startseite</a></li></ul> <div class="mainmenu_sub" id="mainmenu_med"> <ul><li><a href="/medizinisches-angebot/koerperkompass/">Körperkompass</a> <a href="/medizinisches-angebot/koerperkompass/"><img src="/fileadmin/template/images/icon/koerperkompass_icon.png" alt="Koerperkompass" style="height: 180px" /></a><ul><li><a href="medizinisches-angebot/koerperkompass/frau/" >Frau</a></li><li><a href="medizinisches-angebot/koerperkompass/mann/" >Mann</a></li></ul> </li><li><a href="medizinisches-angebot/zentren/"  >Kompetenzzentren</a> <ul><li><a href="medizinisches-angebot/zentren/brustkrebszentrum/" >Brustkrebszentrum</a></li><li><a href="medizinisches-angebot/zentren/darmkrebszentrum/" >Darmkrebszentrum</a></li><li><a href="medizinisches-angebot/zentren/endoprothetikzentrum/" >Endoprothetikzentrum</a></li><li><a href="medizinisches-angebot/zentren/traumazentrum/" >Traumazentrum</a></li><li><a href="medizinisches-angebot/fachabteilungen/neurologie/stationen/schlaganfalleinheit-stroke-unit/" >Schlaganfalleinheit / Stroke Unit</a></li><li><a href="medizinisches-angebot/fachabteilungen/innere-medizin/kardiologie-und-angiologie/zentrum-fuer-herz-und-gefaessmedizin/" >Zentrum für Herz- und Gefäßmedizin</a></li></ul> </li><li><a href="medizinisches-angebot/fachabteilungen/"  >Fachabteilungen</a> <ul><li><a href="medizinisches-angebot/fachabteilungen/allgemein-und-viszeralchirurgie/" >Allgemein- und Viszeralchirurgie</a></li><li><a href="medizinisches-angebot/fachabteilungen/anaesthesiologie-und-intensivmedizin/" >Anästhesiologie und Intensivmedizin</a></li><li><a href="medizinisches-angebot/fachabteilungen/frauenheilkunde/" >Frauenheilkunde</a></li><li><a href="medizinisches-angebot/fachabteilungen/geburtshilfe/" >Geburtshilfe</a></li><li><a href="medizinisches-angebot/fachabteilungen/gefaess-und-endovaskularchirurgie/" >Gefäß- und Endovaskularchirurgie</a></li><li><a href="medizinisches-angebot/fachabteilungen/hals-nasen-ohrenheilkunde/" >Hals-, Nasen-, Ohrenheilkunde</a></li><li><a href="medizinisches-angebot/fachabteilungen/innere-medizin/" >Innere Medizin</a></li><li><a href="medizinisches-angebot/fachabteilungen/neurologie/" >Neurologie</a></li><li><a href="medizinisches-angebot/fachabteilungen/orthopaedie-und-unfallchirurgie/" >Orthopädie und Unfallchirurgie</a></li><li><a href="medizinisches-angebot/fachabteilungen/physiotherapie/" >Physiotherapie</a></li><li><a href="medizinisches-angebot/fachabteilungen/strahlentherapie/" >Strahlentherapie</a></li><li><a href="medizinisches-angebot/fachabteilungen/urologie/" >Urologie</a></li></ul> </li><li><a href="medizinisches-angebot/pflege/">Weitere Informationen</a> <ul><li><a href="medizinisches-angebot/pflege/" >Pflege</a></li><li><a href="medizinisches-angebot/dem-haus-sind-angeschlossen/" >Dem Haus sind angeschlossen</a></li></ul> </li></ul></div><div class="mainmenu_sub" id="mainmenu_pat"> <ul><li><a href="/patienten-besucher/krankenhaus-uebersichtsplan/">&Uuml;bersichtsplan</a> <a href="/patienten-besucher/krankenhaus-uebersichtsplan/"><img src="/fileadmin/template/images/icon/uebersicht_bu_icon.png" alt="Uebersichtsplan" style="height: 140px" /></a></li><li><a href="/patienten-besucher/">Patienten</a> <ul><li><a href="patienten-besucher/patienteninformation/" >Patienteninformation</a></li><li><a href="patienten-besucher/anreise-parkmoeglichkeiten/" >Anreise & Parkmöglichkeiten</a></li><li><a href="patienten-besucher/krankenhaus-uebersichtsplan/" >Krankenhaus Übersichtsplan</a></li><li><a href="patienten-besucher/patientenfeedback/" >Patientenfeedback</a></li></ul> </li><li><a href="patienten-besucher/einrichtungen/"  >Einrichtungen</a> <ul><li><a href="patienten-besucher/einrichtungen/sozialdienst/" >Sozialdienst</a></li><li><a href="patienten-besucher/einrichtungen/kiosk-cafeteria/" >Kiosk / Cafeteria</a></li><li><a href="patienten-besucher/einrichtungen/gaestehaus/" >Gästehaus</a></li><li><a href="patienten-besucher/einrichtungen/patientenbuecherei/" >Patientenbücherei</a></li><li><a href="patienten-besucher/einrichtungen/klinisches-ethik-komitee/" >Klinisches Ethik Komitee</a></li><li><a href="patienten-besucher/einrichtungen/gruene-damen-und-herren/" >Grüne Damen und Herren</a></li><li><a href="patienten-besucher/einrichtungen/raum-der-stille/" >Raum der Stille</a></li></ul> </li><li><a href="/patienten-besucher/">Besucher</a> <ul><li><a href="patienten-besucher/besucherinformation/" >Besucherinformation</a></li><li><a href="patienten-besucher/anreise-parkmoeglichkeiten/" >Anreise & Parkmöglichkeiten</a></li><li><a href="patienten-besucher/krankenhaus-uebersichtsplan/" >Krankenhaus Übersichtsplan</a></li></ul> </li></ul></div><div class="mainmenu_sub" id="mainmenu_unt"> <ul><li><a href="/patienten-besucher/krankenhaus-uebersichtsplan/">&Uuml;bersichtsplan</a> <a href="/patienten-besucher/krankenhaus-uebersichtsplan/"><img src="/fileadmin/template/images/icon/uebersicht_bu_icon.png" alt="Uebersichtsplan" style="height: 140px" /></a></li><li><a href="unternehmen">Unternehmen</a> <ul><li><a href="unternehmen/geschaeftsfuehrung/" >Geschäftsführung</a></li><li><a href="unternehmen/leitbild/" >Leitbild</a></li><li><a href="unternehmen/qualitaetsmanagement/" >Qualitätsmanagement</a></li><li><a href="unternehmen/betriebsrat/" >Betriebsrat</a></li><li><a href="unternehmen/betriebsmedizin/" >Betriebsmedizin</a></li><li><a href="unternehmen/foerderverein/" >Förderverein</a></li><li><a href="unternehmen/geschichte/" >Geschichte</a></li><li><a href="unternehmen/kooperationspartner/" >Kooperationspartner</a></li><li><a href="unternehmen/allgemeine-geschaeftsbedingungen/" >Allgemeine Geschäftsbedingungen</a></li><li><a href="unternehmen/auftragsvergaben/" >Auftragsvergaben</a></li></ul> </li><li><a href="unternehmen/lehre-karriere/">Lehre / Karriere</a> <ul><li><a href="unternehmen/lehre-karriere/stellenangebote/" >Stellenangebote</a></li><li><a href="unternehmen/lehre-karriere/pj-studierende/" >PJ-Studierende</a></li><li><a href="unternehmen/lehre-karriere/gesundheitsfachschule-und-bildungszentrum/" >Gesundheitsfachschule und Bildungszentrum</a></li><li><a href="unternehmen/lehre-karriere/freiwilliges-soziales-jahr/" >Freiwilliges Soziales Jahr</a></li><li><a href="unternehmen/lehre-karriere/bundesfreiwilligendienst/" >Bundesfreiwilligendienst</a></li></ul> </li><li><a href="#">Weitere Informationen</a> <ul><li><a href="unternehmen/foerderverein/" >Förderverein</a></li><li><a href="unternehmen/geschichte/" >Geschichte</a></li><li><a href="unternehmen/allgemeine-geschaeftsbedingungen/" >Allgemeine Geschäftsbedingungen</a></li><li><a href="unternehmen/auftragsvergaben/" >Auftragsvergaben</a></li><li><a href="kontakt/" >Kontakt</a></li></ul> </li></ul></div></div>
+        </div>
+        <div id="banner">
+            <div id="breadcrumb"><a href="medizinisches-angebot/fachabteilungen/" >Medizinisches Angebot</a>&nbsp;>&nbsp;<a href="medizinisches-angebot/fachabteilungen/" >Fachabteilungen</a>&nbsp;>&nbsp;<a href="medizinisches-angebot/fachabteilungen/frauenheilkunde/" >Frauenheilkunde</a>&nbsp;>&nbsp;<a href="medizinisches-angebot/fachabteilungen/frauenheilkunde/weiterbildung/" >Weiterbildung</a></div>
+            <h1>Weiterbildung</h1>
+        </div>
+        
+        <div id="content_wrapper">
+            <div class="submenu">
+                <div class="submenu_top"><p>Navigation</p></div>
+                <div class="submenu_middle"><ul><li class="active"><a href="medizinisches-angebot/fachabteilungen/" >Fachabteilungen</a></li><ul><li><a href="medizinisches-angebot/fachabteilungen/allgemein-und-viszeralchirurgie/" >Allgemein- und Viszeralchirurgie</a></li><li><a href="medizinisches-angebot/fachabteilungen/anaesthesiologie-und-intensivmedizin/" >Anästhesiologie und Intensivmedizin</a></li><li class="active active2"><a href="medizinisches-angebot/fachabteilungen/frauenheilkunde/" >Frauenheilkunde</a></li><ul><li><a href="medizinisches-angebot/fachabteilungen/frauenheilkunde/sprechstunden-ambulanz/" >Sprechstunden / Ambulanz</a></li><li><a href="medizinisches-angebot/fachabteilungen/frauenheilkunde/aerzteteam/" >Ärzteteam</a></li><li><a href="medizinisches-angebot/fachabteilungen/frauenheilkunde/ambulante-operationen/" >Ambulante Operationen</a></li><li><a href="medizinisches-angebot/fachabteilungen/frauenheilkunde/urogynaekologie/" >Urogynäkologie</a></li><li class="active"><a href="medizinisches-angebot/fachabteilungen/frauenheilkunde/weiterbildung/" >Weiterbildung</a></li></ul><li><a href="medizinisches-angebot/fachabteilungen/geburtshilfe/" >Geburtshilfe</a></li><li><a href="medizinisches-angebot/fachabteilungen/gefaess-und-endovaskularchirurgie/" >Gefäß- und Endovaskularchirurgie</a></li><li><a href="medizinisches-angebot/fachabteilungen/hals-nasen-ohrenheilkunde/" >Hals-, Nasen-, Ohrenheilkunde</a></li><li><a href="medizinisches-angebot/fachabteilungen/innere-medizin/" >Innere Medizin</a></li><li><a href="medizinisches-angebot/fachabteilungen/neurologie/" >Neurologie</a></li><li><a href="medizinisches-angebot/fachabteilungen/orthopaedie-und-unfallchirurgie/" >Orthopädie und Unfallchirurgie</a></li><li><a href="medizinisches-angebot/fachabteilungen/physiotherapie/" >Physiotherapie</a></li><li><a href="medizinisches-angebot/fachabteilungen/strahlentherapie/" >Strahlentherapie</a></li><li><a href="medizinisches-angebot/fachabteilungen/urologie/" >Urologie</a></li><li><a href="medizinisches-angebot/fachabteilungen/medizinproduktesicherheit/" >Medizinproduktesicherheit</a></li></ul><li><a href="medizinisches-angebot/zentren/" >Kompetenzzentren</a></li><li><a href="medizinisches-angebot/koerperkompass/" >Körperkompass</a></li><li><a href="medizinisches-angebot/pflege/" >Pflege</a></li><li><a href="medizinisches-angebot/dem-haus-sind-angeschlossen/" >Dem Haus sind angeschlossen</a></li></ul></div>
+                <div class="submenu_bottom"></div>
+            </div>
+            
+            <div class="content">
+                
+	<!--  CONTENT ELEMENT, uid:260/textpic [begin] -->
+		<div id="c260" class="box"><div class="top"></div><div class="middle">
+		<!--  Image block: [begin] -->
+			<div class="csc-textpic csc-textpic-center csc-textpic-above"><div class="csc-textpic-imagewrap"><div class="csc-textpic-center-outer"><div class="csc-textpic-center-inner"><div class="csc-textpic-image csc-textpic-last"><img src="fileadmin/_processed_/csm_BU_Frauenheilkunde_Weiterbildung_6ae21f9494.png" width="514" height="172" alt="" border="0" /></div></div></div></div><div class="csc-textpic-text">
+		<!--  Text: [begin] -->
+			<div><p class="bodytext">In unserem Fachgebiet immer auf dem aktuellen Wissensstand zu sein erfordert die Teilnahme an Weiterbildungsveranstaltungen, den Besuch von Kongressen und natürlich ein intensives Selbststudium der aktuellen Literatur. Seminare, Kurse sowie interne und externe Weiterbildungsveranstaltungen werden regelmäßig von unseren Ärztinnen und Ärzten, aber auch von unseren Krankenschwestern und Hebammen besucht. Ebenso bedeutungsvoll ist die Teilnahme an Operations-Workshops, bei denen neue Operationsmethoden erlernt und bereits bekannte vervollkommnet werden. In internen Fortbildungen, die einmal monatlich in unserer Abteilung stattfinden, werden die &nbsp;Neuigkeiten dann allen zugänglich gemacht. Wichtig sind uns auch die gemeinsam mit unseren Pflegekräften und den Hebammen durchgeführten Fortbildungen.&nbsp;</p></div><div></div><div><p class="bodytext">Durch das Vorliegen einer fünfjährigen Ausbildungsermächtigung zur Facharztweiterbildung können bei uns auch junge ärztliche Kollegen ihre Facharztausbildung absolvieren, ohne die Ausbildungseinrichtung zu wechseln. Das Vorhandensein und das Zusammenspiel der unterschiedlichen am Krankenhaus etablierten Fachdisziplinen ermöglicht eine umfassende Ausbildung und macht die Tätigkeit hier interessant. Die große Anzahl an Operationen gibt die Gelegenheit, schnell operative Fähigkeiten zu erlangen und den geforderten Operationskatalog zur Facharztausbildung zu erfüllen. Das Bemühen um den medizinischen Nachwuchs fand mit der Ernennung zum Akademischen Lehrkrankenhaus der Universität Hamburg seine Anerkennung.<br /><br /><br /></p></div><div><h2>Studentinnen und Studenten, PJ</h2></div><div></div><div><p class="bodytext">Die gynäkologisch-geburtshilfliche Abteilung freut sich über InteressentenInnen. Unter äußerst guten Bedingungen können Sie hier Ihre Ausbildung vervollständigen.</p></div><div></div><div><p class="bodytext">Wir bieten:</p><ul><li>interessante Arbeit in einem jungen, netten Team</li><li>ein umfangreiches diagnostisches und therapeutisches Spektrum gynäkologischer Erkrankungen</li><li>Einsatz im OP (Assistieren, nicht aus der dritten Reihe zusehen!!)</li><li> Hospitation im Kreißsaal</li><li>Teilnahme an der Notfallversorgung</li><li>wöchentliche Oberarztlehrvisiten</li><li>individuelle Anleitung bei der Arbeit auf Station</li><li> Teilnahme an Tumorkonferenzen, Röntgenvisiten</li><li>kostenlose Verpflegung </li><li>kostenlose Dienstbekleidung</li><li>kostenlose Wohnmöglichkeiten am Krankenhaus</li><li>eine finanzielle Aufwandsentschädigung in Höhe von € 300,- monatlich (für PJ-Studentinnen und Studenten)</li><li>und noch viel mehr.....</li></ul></div><div></div><div><p class="bodytext">Interesse? Melden Sie sich unter 04181 - 13 1701 oder per <a href="mailto:friedemann.schulz@krankenhaus-buchholz.de" title="Öffnet ein Fenster zum Versenden der E-Mail" class="mail">E-Mail</a>.<br />Wir beantworten Ihre Fragen gern.</p></div><div></div>
+		<!--  Text: [end] -->
+			</div></div>
+		<!--  Image block: [end] -->
+			</div><div class="bottom"></div></div>
+	<!--  CONTENT ELEMENT, uid:260/textpic [end] -->
+		
+            </div>
+            
+            <button type="button" class="toggle-right"></button>
+            <div class="right">
+                
+	<!--  CONTENT ELEMENT, uid:877/textpic [begin] -->
+		<div id="c877" class="box"><div class="top"></div><div class="middle">
+		<!--  Header: [begin] -->
+			<div class="csc-header csc-header-n1"><h2 class="csc-firstHeader">Chefarzt</h2></div>
+		<!--  Header: [end] -->
+			
+		<!--  Image block: [begin] -->
+			<div class="csc-textpic csc-textpic-center csc-textpic-above"><div class="csc-textpic-imagewrap"><div class="csc-textpic-center-outer"><div class="csc-textpic-center-inner"><div class="csc-textpic-image csc-textpic-last"><img src="fileadmin/_processed_/csm_Dr._Friedemann_Schulz_203f941bf7.png" width="147" height="221" alt="" border="0" /></div></div></div></div><div class="csc-textpic-text">
+		<!--  Text: [begin] -->
+			<p class="bodytext"><b>Dr. Friedemann Schulz</b></p>
+<p class="bodytext">Chefarzt Gynäkologie und Geburtshilfe<br />Krankenhaus Buchholz</p>
+<p class="bodytext">Kontakt über das Sekretariat</p>
+<p class="bodytext">Tel.: 04181 - 13 1701</p>
+		<!--  Text: [end] -->
+			</div></div>
+		<!--  Image block: [end] -->
+			</div><div class="bottom"></div></div>
+	<!--  CONTENT ELEMENT, uid:877/textpic [end] -->
+		
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="footer_content">
+        <ul><li class="mainitem"><a href="/patienten-besucher/">Patienten & Besucher</a> <ul><li class="subitem"><a href="patienten-besucher/patienteninformation/" >Patienteninformation</a></li><li class="subitem"><a href="patienten-besucher/einrichtungen/sozialdienst/" >Einrichtungen</a></li><li class="subitem"><a href="patienten-besucher/besucherinformation/" >Besucherinformation</a></li><li class="subitem"><a href="patienten-besucher/anreise-parkmoeglichkeiten/" >Anreise & Parkmöglichkeiten</a></li><li class="subitem"><a href="patienten-besucher/krankenhaus-uebersichtsplan/" >Krankenhaus Übersichtsplan</a></li></ul> </li><li class="mainitem"><a href="/medizinisches-angebot/" style="width: 440px">Medizinisches Angebot</a> <ul style="width: 440px"><li class="subitem subitem_medi"><a href="medizinisches-angebot/zentren/" >Kompetenzzentren</a></li><li class="subitem subitem_medi"><a href="medizinisches-angebot/fachabteilungen/" >Fachabteilungen</a></li><li class="subitem subitem_medi"><a href="medizinisches-angebot/zentren/brustkrebszentrum/" >Brustkrebszentrum</a></li><li class="subitem subitem_medi"><a href="medizinisches-angebot/fachabteilungen/allgemein-und-viszeralchirurgie/" >Allgemein- und Viszeralchirurgie</a></li><li class="subitem subitem_medi"><a href="medizinisches-angebot/zentren/darmkrebszentrum/" >Darmkrebszentrum</a></li><li class="subitem subitem_medi"><a href="medizinisches-angebot/fachabteilungen/anaesthesiologie-und-intensivmedizin/" >Anästhesiologie und Intensivmedizin</a></li><li class="subitem subitem_medi"><a href="medizinisches-angebot/zentren/endoprothetikzentrum/" >Endoprothetikzentrum</a></li><li class="subitem subitem_medi"><a href="medizinisches-angebot/fachabteilungen/frauenheilkunde/" >Frauenheilkunde</a></li><li class="subitem subitem_medi"><a href="medizinisches-angebot/zentren/traumazentrum/" >Traumazentrum</a></li><li class="subitem subitem_medi"><a href="medizinisches-angebot/fachabteilungen/geburtshilfe/" >Geburtshilfe</a></li><li class="subitem subitem_medi"><a href="medizinisches-angebot/fachabteilungen/neurologie/stationen/schlaganfalleinheit-stroke-unit/" >Schlaganfalleinheit / Stroke Unit</a></li><li class="subitem subitem_medi"><a href="medizinisches-angebot/fachabteilungen/gefaess-und-endovaskularchirurgie/" >Gefäß- und Endovaskularchirurgie</a></li><li class="subitem subitem_medi"><a href="medizinisches-angebot/fachabteilungen/innere-medizin/kardiologie-und-angiologie/zentrum-fuer-herz-und-gefaessmedizin/" >Zentrum für Herz- und Gefäßmedizin</a></li><li class="subitem subitem_medi"><a href="medizinisches-angebot/fachabteilungen/hals-nasen-ohrenheilkunde/" >Hals-, Nasen-, Ohrenheilkunde</a></li><li class="subitem subitem_medi"><a href="nbsp/" ><li class="subitem subitem_medi subitem_empty">&nbsp;</li></a></li><li class="subitem subitem_medi"><a href="medizinisches-angebot/fachabteilungen/innere-medizin/" >Innere Medizin</a></li><li class="subitem subitem_medi"><a href="nbsp/" ><li class="subitem subitem_medi subitem_empty">&nbsp;</li></a></li><li class="subitem subitem_medi"><a href="medizinisches-angebot/fachabteilungen/neurologie/" >Neurologie</a></li><li class="subitem subitem_medi"><a href="nbsp/" ><li class="subitem subitem_medi subitem_empty">&nbsp;</li></a></li><li class="subitem subitem_medi"><a href="medizinisches-angebot/fachabteilungen/orthopaedie-und-unfallchirurgie/" >Orthopädie und Unfallchirurgie</a></li><li class="subitem subitem_medi"><a href="nbsp/" ><li class="subitem subitem_medi subitem_empty">&nbsp;</li></a></li><li class="subitem subitem_medi"><a href="medizinisches-angebot/fachabteilungen/physiotherapie/" >Physiotherapie</a></li><li class="subitem subitem_medi"><a href="nbsp/" ><li class="subitem subitem_medi subitem_empty">&nbsp;</li></a></li><li class="subitem subitem_medi"><a href="medizinisches-angebot/fachabteilungen/strahlentherapie/" >Strahlentherapie</a></li><li class="subitem subitem_medi"><a href="nbsp/" ><li class="subitem subitem_medi subitem_empty">&nbsp;</li></a></li><li class="subitem subitem_medi"><a href="medizinisches-angebot/fachabteilungen/urologie/" >Urologie</a></li></ul></li><li class="mainitem"><a style="margin: 0 0 15px;" href="/unternehmen/">Unternehmen</a> <ul><li class="subitem"><a href="unternehmen/geschaeftsfuehrung/" >Geschäftsführung</a></li><li class="subitem"><a href="unternehmen/leitbild/" >Leitbild</a></li><li class="subitem"><a href="unternehmen/qualitaetsmanagement/" >Qualitätsmanagement</a></li><li class="subitem"><a href="unternehmen/betriebsrat/" >Betriebsrat</a></li><li class="subitem"><a href="unternehmen/betriebsmedizin/" >Betriebsmedizin</a></li><li class="subitem"><a href="unternehmen/lehre-karriere/stellenangebote/" >Lehre & Karriere</a></li><li class="subitem"><a href="unternehmen/kooperationspartner/" >Kooperationspartner</a></li><li class="subitem"><a href="unternehmen/foerderverein/" >Förderverein</a></li><li class="subitem"><a href="unternehmen/geschichte/" >Geschichte</a></li><li class="subitem"><a href="unternehmen/allgemeine-geschaeftsbedingungen/" >Allgemeine Geschäftsbedingungen</a></li><li class="subitem"><a href="unternehmen/auftragsvergaben/" >Auftragsvergaben</a></li></ul> </li></ul>
+        <div class="clear"></div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+
+
+$("#mainmenu_button_unt").mouseover(function() {
+	$("#mainmenu_med").css("display","none");
+	$("#mainmenu_pat").css("display","none");
+	$("#mainmenu_unt").show();
+});
+
+$("#mainmenu_button_med").mouseover(function() {
+	$("#mainmenu_pat").css("display","none");
+	$("#mainmenu_unt").css("display","none");	
+	$("#mainmenu_med").show();
+});
+
+$("#mainmenu_button_pat").mouseover(function() {
+	$("#mainmenu_med").css("display","none");
+	$("#mainmenu_unt").css("display","none");
+	$("#mainmenu_pat").show();
+});
+
+$("#mainmenu_med").mouseleave(function() {
+	if($('#mainmenu').is(":hover")){
+
+	} else {
+		$("#mainmenu_med").hide();
+	}
+});
+
+$("#mainmenu_button_med").mouseleave(function() {
+
+	$("#mainmenu").mouseleave(function() {
+		$("#mainmenu_med").hide();
+	});
+});
+
+
+$("#mainmenu_pat").mouseleave(function() {
+	if($('#mainmenu').is(":hover")){
+
+	} else {
+		$("#mainmenu_pat").hide();
+	}
+});
+
+$("#mainmenu_button_pat").mouseleave(function() {
+
+	$("#mainmenu").mouseleave(function() {
+		$("#mainmenu_pat").hide();
+	});
+});
+
+$("#mainmenu_unt").mouseleave(function() {
+	if($('#mainmenu').is(":hover")){
+
+	} else {
+		$("#mainmenu_unt").hide();
+	}
+});
+
+$("#mainmenu_button_unt").mouseleave(function() {
+
+	$("#mainmenu").mouseleave(function() {
+		$("#mainmenu_unt").hide();
+	});
+});
+
+if ($('.submenu_middle ul li.active2').length > 0) {
+	$(".submenu_middle ul li.inactive").css("display","none");
+	
+}
+if($('.submenu_middle').is(':empty')){
+	
+		$( "" ).replaceAll( ".submenu_top" );
+		$( "" ).replaceAll( ".submenu_middle" );
+		$( "" ).replaceAll( ".submenu_bottom" );
+		
+}
+
+
+</script>
+<script src="typo3conf/ext/t3colorbox/Resources/Public/JavaScript/jquery.colorbox-1.4.26.min.js?1434039893" type="text/javascript"></script>
+<script src="typo3temp/javascript_181590f32a.js?1504619733" type="text/javascript"></script>
+
+
+</body>
+</html>
