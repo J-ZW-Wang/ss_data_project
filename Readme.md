@@ -61,4 +61,4 @@
 
 * PeakData - Keyword Detection on Websites
   - HTML read-in and text extraction using beautifusoup
-  - 
+  - LLM text generation model with Hugging face pipeline 
