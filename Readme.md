@@ -62,3 +62,8 @@
 * PeakData - Keyword Detection on Websites
   - HTML read-in and text extraction using beautifusoup
   - LLM text generation model with Hugging face pipeline 
+  - Supervised fine tuning with transformer model
+  - TF-IDF + SVC / XGB / Random Forrest
+
+* Allegro - Laptop Price Prediction
+  - Load JSON format into pandas data frame
