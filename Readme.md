@@ -68,3 +68,5 @@
 * Allegro - Laptop Price Prediction
   - Load JSON format into pandas data frame
   - List in Pandas explode and pivot
+  - XGboost regressor
+  - Decision tree regressor
