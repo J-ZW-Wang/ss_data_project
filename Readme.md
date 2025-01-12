@@ -70,3 +70,5 @@
   - List in Pandas explode and pivot
   - XGboost regressor
   - Decision tree regressor
+
+* Neurotrade - Prediction of Stock Price Direction
