@@ -72,3 +72,5 @@
   - Decision tree regressor
 
 * Neurotrade - Prediction of Stock Price Direction
+  - XGBClassifer
+  - .shift() transformation
